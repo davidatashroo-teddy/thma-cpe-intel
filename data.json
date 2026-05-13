@@ -309,7 +309,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "VP and Medical Director of Operations, Baptist Physician Enterprise (2023); featured in 'Jacksonville Medical Professionals' publication (2020).",
+    "personalBackground": "Hematologist/Oncologist; U.S. veteran; previously at Geisinger; expert in comprehensive cancer care models.",
+    "conversationalLead": "I saw you\u2019ve been leading the transition to a comprehensive cancer care model at Baptist\u2014how has your background at Geisinger influenced that approach in Jacksonville?",
+    "profilePic": ""
   },
   {
     "id": "6srb8e940",
@@ -324,7 +328,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Appointed VP of Medical Affairs for Baptist Nassau and Baptist Beaches (Aug 2024).",
+    "personalBackground": "Anesthesiologist (FASA); member of Duval County Medical Society; clinical leader in the Jacksonville area.",
+    "conversationalLead": "Congratulations on your recent appointment as VP of Medical Affairs for Nassau and Beaches. How are you approaching clinical standardization across those different sites?",
+    "profilePic": ""
   },
   {
     "id": "uuds98c3x",
@@ -339,7 +347,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Promoted to VP of Medical Affairs at Wolfson Children\u2019s (Nov 2023); featured in Romper on pediatric allergies.",
+    "personalBackground": "Jacksonville native; 20+ years as pediatric hospitalist; former Division Chief at Nemours.",
+    "conversationalLead": "As a Jacksonville native and longtime leader at Wolfson, you\u2019ve seen the system evolve\u2014how is the new VP of Medical Affairs role allowing you to shape the future of pediatric hospital medicine there?",
+    "profilePic": ""
   },
   {
     "id": "rlzcrodzm",
@@ -354,7 +366,11 @@
     "status": "",
     "emrAmbulatory": "Oracle Cerner",
     "emrInpatient": "Oracle Cerner",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Co-author on Miami Heart Study in Circulation: Cardiovascular Imaging (2023); speaker at Baptist Research Symposium (2025).",
+    "personalBackground": "EVP and Chief Clinical Officer at Baptist Health South Florida; founding CEO of Baptist Health Medical Group.",
+    "conversationalLead": "I read your recent work on the Miami Heart Study in Circulation\u2014fascinating findings. How are you integrating those kinds of large-scale research insights into Baptist South Florida's clinical operations?",
+    "profilePic": ""
   },
   {
     "id": "wvevtl299",
@@ -388,7 +404,11 @@
     "publications": "Presented on the rationale for ERAS pathways at BSW ERAS Symposium.",
     "personalInterests": "Quality improvement, Enhanced Recovery After Surgery (ERAS) pathways.",
     "leadIn": "I know you've done incredible work spreading ERAS throughout Baylor Health System; what are you focusing on next for quality improvement?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "Executive Vice President and CMO at Baylor Scott & White; featured on STATS podcast (2024) discussing the future of healthcare.",
+    "personalBackground": "Surgical background; former Chief of Colon and Rectal Surgery; leader in ERAS (Enhanced Recovery After Surgery) protocols.",
+    "conversationalLead": "I caught your appearance on the STATS podcast\u2014your vision for the future of healthcare was very compelling. How is BSW currently leveraging ERAS protocols to drive system-wide efficiency?",
+    "profilePic": ""
   },
   {
     "id": "d74k6e7gg",
@@ -403,7 +423,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Promoted to CMO of the Medical Group at ChristianaCare (Nov 2025); former CMO of Wilmington Hospital.",
+    "personalBackground": "Physician leader focused on health equity and community-based health initiatives; MD/MBA background.",
+    "conversationalLead": "Congratulations on the move to CMO of the Medical Group! I saw your recent community health work in Wilmington\u2014how is that grassroots focus scaling to the system-wide Medical Group level?",
+    "profilePic": ""
   },
   {
     "id": "oqsebb7m4",
@@ -433,7 +457,11 @@
     "status": "",
     "emrAmbulatory": "Oracle Cerner",
     "emrInpatient": "Oracle Cerner",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Longtime President and CEO of ChristianaCare; announced retirement for Sept 2026; named '50 Most Influential Clinical Executive' by Modern Healthcare (2022).",
+    "personalBackground": "Family physician; 23 years at ChristianaCare; yoga enthusiast; advocate for women in healthcare leadership.",
+    "conversationalLead": "Your legacy at ChristianaCare has been truly transformational\u2014congratulations on your upcoming retirement. What do you see as the most critical 'unfinished business' for healthcare leadership in the next few years?",
+    "profilePic": ""
   },
   {
     "id": "i16330gyl",
@@ -448,7 +476,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Presented on CNO-CMO dyads at Corewell Health East Symposium (2025); featured on Becker\u2019s Healthcare Podcast (2024).",
+    "personalBackground": "Chief Medical Officer at Corewell Health; Emergency Medicine background; former leader at Bon Secours Mercy Health Richmond.",
+    "conversationalLead": "I was interested in your recent presentation on the CNO-CMO dyad\u2014that collaborative model is so critical. How are you applying that dyad structure at Corewell to drive clinical transformation?",
+    "profilePic": ""
   },
   {
     "id": "xedegqfkc",
@@ -463,7 +495,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Lead author on carotid revascularization and PAD studies in NEJM (2026) and J Am Coll Cardiol (2025).",
+    "personalBackground": "Endowed Chair at Frederik Meijer Heart and Vascular Institute; VP Cardiovascular Health at Corewell Health; world-renowned vascular surgeon.",
+    "conversationalLead": "I\u2019ve been following your recent publications in NEJM and JACC on carotid revascularization\u2014incredible work. How is the Frederik Meijer Institute currently leveraging that level of research to improve cardiovascular outcomes across Corewell?",
+    "profilePic": ""
   },
   {
     "id": "eezd0prvg",
@@ -478,7 +514,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "President of the Physician Division at Emory Healthcare; leader in physician enterprise AI transformation.",
+    "personalBackground": "Clinical leadership at Emory; speaker on scaling AI in physician workflows.",
+    "conversationalLead": "I\u2019m looking forward to your session on AI scaling\u2014Emory has such a strong reputation for innovation. What has been the biggest hurdle in getting physician buy-in for these new AI tools?",
+    "profilePic": ""
   },
   {
     "id": "k0iu7oqzk",
@@ -508,7 +548,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 2
+    "openOpps": 2,
+    "recentPublications": "Senior Associate Dean for Quality; focus on clinical quality and academic medicine integration at MCW.",
+    "personalBackground": "Leadership at Froedtert & Medical College of Wisconsin; background in quality improvement and medical education.",
+    "conversationalLead": "As Senior Associate Dean for Quality, how are you balancing the dual goals of academic research and front-line clinical quality at Froedtert?",
+    "profilePic": ""
   },
   {
     "id": "vl14qqtpa",
@@ -557,7 +601,11 @@
     "publications": "Featured in an AMA article 'Geisinger CMO works to cut friction and lift care' (April 2026).",
     "personalInterests": "Removing barriers for care teams, reducing friction, value-based care.",
     "leadIn": "I loved the AMA piece on how you're working to cut friction and lift care at Geisinger. What's the biggest friction point you're tackling right now?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "EVP and CMO at Geisinger; leading system-wide discovery for clinical AI and patient flow.",
+    "personalBackground": "Champion for clinical innovation; has worked closely with leadership to initiate EMR-integrated discovery processes.",
+    "conversationalLead": "It's great to see Geisinger moving forward with the evaluation of clinical AI across IP and PCC. How are you thinking about the ROI of these tools in the context of the current economic environment?",
+    "profilePic": ""
   },
   {
     "id": "bz7yi1zb9",
@@ -576,7 +624,11 @@
     "publications": "Named a 'Chief Medical Officer to Know' by Becker's (Feb 2025) and participated in the Medical Society of NJ innovation panel (April 2025).",
     "personalInterests": "Clinical innovation, AI-driven primary care platforms.",
     "leadIn": "I saw you recently praised K Health's AI platform at Hackensack Meridian. What other AI innovations are you most excited about?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "President of Physician Services Division and Chief Physician Executive at Hackensack Meridian Health.",
+    "personalBackground": "Executive leadership at one of the largest health systems in New Jersey; focus on physician service line optimization.",
+    "conversationalLead": "I saw the recent follow-up discussions at Hackensack\u2014exciting things happening there. How is the Physician Services Division currently prioritizing clinical AI initiatives for 2026?",
+    "profilePic": ""
   },
   {
     "id": "7731clkw3",
@@ -610,7 +662,11 @@
     "publications": "Recognized as one of Crain\u2019s Detroit Business\u2019 Notable Leaders in Health Care for 2024.",
     "personalInterests": "Sustainability in healthcare, health equity, cancer research.",
     "leadIn": "Congratulations on being named one of Crain's Notable Leaders in Health Care! I'd love to hear about Henry Ford Health's sustainability initiatives.",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "EVP and Chief Clinical Officer at Henry Ford Health; leading system-wide clinical strategy and Epic implementation.",
+    "personalBackground": "Gynecologic Oncologist; senior clinical leader at Henry Ford; focus on system-wide clinical integration.",
+    "conversationalLead": "With the Epic work progressing well, how are you thinking about the next layer of clinical assistants and AI to support your providers at Henry Ford?",
+    "profilePic": ""
   },
   {
     "id": "usnk3kdbw",
@@ -659,7 +715,11 @@
     "publications": "Featured on Becker's Healthcare Podcast discussing EPIC expansion, simplifying care, and leadership (Feb 2025).",
     "personalInterests": "Healthcare innovation, quality improvement, clinical leadership training.",
     "leadIn": "I heard your recent Becker's Healthcare Podcast on simplifying care and EPIC expansion\u2014how has that transition been impacting your clinical teams?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "Chief Clinical Officer at Intermountain Health; frequent speaker on AI and clinical transformation.",
+    "personalBackground": "Senior leadership at Intermountain; deeply involved in PCC and digital health partnerships.",
+    "conversationalLead": "I'm looking forward to your session on AI at CPE\u2014Intermountain's work in this space is always at the cutting edge. How is the system-wide clinical strategy shifting to accommodate these new AI assistants?",
+    "profilePic": ""
   },
   {
     "id": "v77u1hxt3",
