@@ -9,30 +9,45 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f3f4f6; color: #111827; }
         .card { transition: all 0.2s ease-in-out; }
-        .card:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .details-section { display: none; }
+        .details-section.open { display: block; animation: fadeIn 0.2s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body class="pb-20">
     <div id="app" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <!-- Header -->
         <header class="mb-6 sticky top-0 bg-[#f3f4f6] pt-4 pb-4 z-10 border-b border-gray-200">
-            <h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+            <h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2 mb-3">
                 <i data-lucide="users" class="text-blue-600"></i>
                 THMA CPE Intel
             </h1>
-            <div class="mt-4 relative">
+            
+            <div class="relative mb-3">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <i data-lucide="search" class="h-5 w-5 text-gray-400"></i>
                 </div>
                 <input type="text" id="searchInput" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-lg shadow-sm" placeholder="Search accounts, names, titles...">
             </div>
-            <div class="mt-3 flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="filterChips">
-                <button class="filter-btn active px-4 py-1.5 rounded-full bg-blue-600 text-white text-sm font-medium whitespace-nowrap shadow-sm" data-filter="all">All Attendees</button>
-                <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="priority">🔥 Top Priority</button>
-                <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="notes">Has Notes</button>
-                <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="opps">Open Opps</button>
+
+            <div class="flex gap-2 mb-2">
+                <select id="priorityFilter" class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    <option value="all">All Priorities</option>
+                    <option value="High">🔥 High Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+                <select id="intelFilter" class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    <option value="all">All Intel</option>
+                    <option value="notes">Has Playbook Notes</option>
+                    <option value="opps">Open Opps</option>
+                </select>
             </div>
-            <div id="resultCount" class="text-sm text-gray-500 mt-2 font-medium"></div>
+            
+            <div class="flex justify-between items-center mt-2">
+                <div id="resultCount" class="text-sm text-gray-500 font-medium"></div>
+                <button onclick="toggleAllCards()" id="toggleAllBtn" class="text-sm text-blue-600 font-medium">Expand All</button>
+            </div>
         </header>
 
         <!-- List -->
@@ -48,19 +63,15 @@
     <script>
         let attendees = [];
         let filteredAttendees = [];
-        let currentFilter = 'all';
+        let allExpanded = false;
 
-        // Initialize icons
         lucide.createIcons();
 
-        // Fetch data
         async function loadData() {
             try {
-                // Add cache-busting to ensure we get the latest data with deep research
                 const response = await fetch('./data.json?v=' + new Date().getTime());
                 attendees = await response.json();
                 
-                // Sort alphabetically by health system then name
                 attendees.sort((a, b) => {
                     const sysA = (a.healthSystem || '').toLowerCase();
                     const sysB = (b.healthSystem || '').toLowerCase();
@@ -73,138 +84,160 @@
                 renderList();
             } catch (error) {
                 document.getElementById('directoryList').innerHTML = `<div class="text-center text-red-500 py-10">Error loading data.</div>`;
-                console.error("Failed to load data:", error);
             }
         }
 
         function filterData() {
             const query = document.getElementById('searchInput').value.toLowerCase();
+            const priorityVal = document.getElementById('priorityFilter').value;
+            const intelVal = document.getElementById('intelFilter').value;
             
             filteredAttendees = attendees.filter(p => {
                 const searchStr = `${p.name} ${p.healthSystem} ${p.title}`.toLowerCase();
                 const matchesSearch = searchStr.includes(query);
                 
-                let matchesFilter = true;
-                if (currentFilter === 'notes') {
-                    matchesFilter = !!(p.davidNotes || p.jasonNotes || p.avpNotes);
-                } else if (currentFilter === 'opps') {
-                    matchesFilter = !!p.openOpps;
-                } else if (currentFilter === 'priority') {
-                    // C-level titles or explicit existing notes count as top priority
-                    const isCLevel = p.title && (p.title.includes('Chief') || p.title.includes('CMO') || p.title.includes('CCO') || p.title.includes('CEO') || p.title.includes('CIO'));
-                    const hasNotes = !!(p.davidNotes || p.jasonNotes || p.avpNotes);
-                    matchesFilter = isCLevel || hasNotes;
+                let matchesPriority = true;
+                if (priorityVal !== 'all') {
+                    matchesPriority = (p.priorityLevel || '').toLowerCase().includes(priorityVal.toLowerCase());
                 }
 
-                return matchesSearch && matchesFilter;
+                let matchesIntel = true;
+                if (intelVal === 'notes') {
+                    matchesIntel = !!(p.davidNotes || p.jasonNotes || p.avpNotes);
+                } else if (intelVal === 'opps') {
+                    matchesIntel = !!p.openOpps;
+                }
+
+                return matchesSearch && matchesPriority && matchesIntel;
             });
 
             renderList();
         }
 
+        function toggleCard(id) {
+            const el = document.getElementById('details-' + id);
+            const icon = document.getElementById('icon-' + id);
+            if (el.classList.contains('open')) {
+                el.classList.remove('open');
+                icon.innerHTML = '<polyline points="6 9 12 15 18 9"></polyline>';
+            } else {
+                el.classList.add('open');
+                icon.innerHTML = '<polyline points="18 15 12 9 6 15"></polyline>';
+            }
+        }
+
+        function toggleAllCards() {
+            allExpanded = !allExpanded;
+            document.getElementById('toggleAllBtn').textContent = allExpanded ? 'Collapse All' : 'Expand All';
+            document.querySelectorAll('.details-section').forEach(el => {
+                const id = el.id.replace('details-', '');
+                const icon = document.getElementById('icon-' + id);
+                if (allExpanded) {
+                    el.classList.add('open');
+                    icon.innerHTML = '<polyline points="18 15 12 9 6 15"></polyline>';
+                } else {
+                    el.classList.remove('open');
+                    icon.innerHTML = '<polyline points="6 9 12 15 18 9"></polyline>';
+                }
+            });
+        }
+
+        function saveNote(id, val) {
+            localStorage.setItem('teddy_note_' + id, val);
+        }
+
+        function getPriorityBadge(level) {
+            if (!level) return '';
+            const lower = level.toLowerCase();
+            if (lower.includes('high')) return `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">High</span>`;
+            if (lower.includes('medium')) return `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Med</span>`;
+            if (lower.includes('low')) return `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Low</span>`;
+            return `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">${level}</span>`;
+        }
+
         function renderList() {
             const container = document.getElementById('directoryList');
-            const countLabel = document.getElementById('resultCount');
-            
-            countLabel.textContent = `${filteredAttendees.length} result${filteredAttendees.length !== 1 ? 's' : ''}`;
+            document.getElementById('resultCount').textContent = `${filteredAttendees.length} results`;
             
             if (filteredAttendees.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center py-12 bg-white rounded-xl border border-gray-200">
-                        <i data-lucide="search-x" class="h-10 w-10 text-gray-400 mx-auto mb-3"></i>
-                        <p class="text-gray-500 font-medium">No attendees found</p>
-                    </div>
-                `;
-                lucide.createIcons();
+                container.innerHTML = `<div class="text-center py-12"><p class="text-gray-500 font-medium">No attendees found</p></div>`;
                 return;
             }
 
             container.innerHTML = filteredAttendees.map(p => {
                 const hasNotes = p.davidNotes || p.jasonNotes || p.avpNotes;
                 const hasDeepResearch = p.publications || p.personalInterests || p.leadIn || p.imageUrl;
+                const localNote = localStorage.getItem('teddy_note_' + p.id) || '';
                 
                 let imageHtml = '';
                 if (p.imageUrl) {
                     imageHtml = `<img src="${p.imageUrl}" alt="${p.name}" class="w-12 h-12 rounded-full object-cover shrink-0 border border-gray-200" onerror="this.style.display='none'">`;
                 } else {
-                    imageHtml = `<div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 font-bold border border-blue-200"><i data-lucide="user" class="w-6 h-6"></i></div>`;
+                    imageHtml = `<div class="w-12 h-12 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center shrink-0 border border-gray-200"><i data-lucide="user" class="w-6 h-6"></i></div>`;
                 }
 
-                let notesHtml = '';
-                if (hasNotes || hasDeepResearch) {
-                    notesHtml = `<div class="mt-4 pt-4 border-t border-gray-100 space-y-3">`;
-                    
-                    if (p.leadIn) {
-                        notesHtml += `
-                            <div class="bg-amber-50 rounded-lg p-3 border-l-4 border-amber-400">
-                                <span class="text-xs font-bold uppercase tracking-wider text-amber-800 mb-1 flex items-center gap-1"><i data-lucide="message-circle" class="w-3 h-3"></i> Lead-in / Icebreaker</span>
-                                <p class="text-sm text-amber-900 leading-relaxed font-medium">${p.leadIn}</p>
-                            </div>
-                        `;
-                    }
-                    if (p.publications) {
-                        notesHtml += `
-                            <div class="bg-purple-50 rounded-lg p-3">
-                                <span class="text-xs font-bold uppercase tracking-wider text-purple-800 mb-1 flex items-center gap-1"><i data-lucide="book-open" class="w-3 h-3"></i> Recent Pubs & News</span>
-                                <p class="text-sm text-purple-900 leading-relaxed">${p.publications}</p>
-                            </div>
-                        `;
-                    }
-                    if (p.personalInterests) {
-                        notesHtml += `
-                            <div class="bg-rose-50 rounded-lg p-3">
-                                <span class="text-xs font-bold uppercase tracking-wider text-rose-800 mb-1 flex items-center gap-1"><i data-lucide="heart" class="w-3 h-3"></i> Personal / Interests</span>
-                                <p class="text-sm text-rose-900 leading-relaxed">${p.personalInterests}</p>
-                            </div>
-                        `;
-                    }
-                    if (p.davidNotes) {
-                        notesHtml += `
-                            <div class="bg-blue-50 rounded-lg p-3">
-                                <span class="text-xs font-bold uppercase tracking-wider text-blue-800 mb-1 flex items-center gap-1"><i data-lucide="user" class="w-3 h-3"></i> David's Notes</span>
-                                <p class="text-sm text-blue-900 leading-relaxed">${p.davidNotes}</p>
-                            </div>
-                        `;
-                    }
-                    if (p.jasonNotes) {
-                        notesHtml += `
-                            <div class="bg-indigo-50 rounded-lg p-3">
-                                <span class="text-xs font-bold uppercase tracking-wider text-indigo-800 mb-1 flex items-center gap-1"><i data-lucide="user-check" class="w-3 h-3"></i> Jason's Notes</span>
-                                <p class="text-sm text-indigo-900 leading-relaxed">${p.jasonNotes}</p>
-                            </div>
-                        `;
-                    }
-                    if (p.avpNotes) {
-                        notesHtml += `
-                            <div class="bg-emerald-50 rounded-lg p-3">
-                                <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 mb-1 flex items-center gap-1"><i data-lucide="briefcase" class="w-3 h-3"></i> AVP / Background</span>
-                                <p class="text-sm text-emerald-900 leading-relaxed">${p.avpNotes}</p>
-                            </div>
-                        `;
-                    }
-                    notesHtml += `</div>`;
-                }
-
-                let badgesHtml = '';
-                if (p.openOpps) badgesHtml += `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800"><i data-lucide="trending-up" class="w-3 h-3 mr-1"></i> ${p.openOpps} Opps</span>`;
-                if (p.status) badgesHtml += `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">${p.status}</span>`;
+                let badgesHtml = getPriorityBadge(p.priorityLevel);
+                if (p.openOpps) badgesHtml += `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">${p.openOpps} Opps</span>`;
 
                 return `
-                    <div class="card bg-white rounded-2xl p-5 border border-gray-200 shadow-sm overflow-hidden">
-                        <div class="flex justify-between items-start gap-4">
-                            <div class="flex gap-4">
+                    <div class="card bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-3">
+                        <!-- Card Header (Always visible) -->
+                        <div class="p-4 flex items-center justify-between cursor-pointer" onclick="toggleCard('${p.id}')">
+                            <div class="flex gap-4 items-center">
                                 ${imageHtml}
                                 <div>
-                                    <h2 class="text-lg font-bold text-gray-900 leading-tight">${p.name || 'Unknown'}</h2>
-                                    <p class="text-sm font-medium text-blue-600 mt-0.5">${p.healthSystem || 'Unknown System'}</p>
-                                    <p class="text-sm text-gray-500 mt-1 line-clamp-2">${p.title || 'No Title'}</p>
+                                    <h2 class="text-base font-bold text-gray-900 leading-tight">${p.name || 'Unknown'}</h2>
+                                    <p class="text-sm font-medium text-blue-600">${p.healthSystem || 'Unknown System'}</p>
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        ${badgesHtml}
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-1 items-end shrink-0">
-                                ${badgesHtml}
+                            <svg id="icon-${p.id}" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                        
+                        <!-- Collapsible Details -->
+                        <div id="details-${p.id}" class="details-section ${allExpanded ? 'open' : ''} border-t border-gray-100 bg-gray-50/50">
+                            <div class="p-4 space-y-4">
+                                <div class="text-sm text-gray-600 mb-2 font-medium">${p.title || 'No Title Listed'}</div>
+                                
+                                ${p.leadIn ? `
+                                <div class="bg-amber-50 rounded-lg p-3 border-l-2 border-amber-400">
+                                    <span class="text-xs font-bold uppercase tracking-wider text-amber-800 mb-1 block">Icebreaker Anchor</span>
+                                    <p class="text-sm text-amber-900 font-medium">${p.leadIn}</p>
+                                </div>` : ''}
+
+                                ${p.davidNotes || p.jasonNotes || p.avpNotes ? `
+                                <div class="bg-white rounded-lg p-3 border border-gray-200">
+                                    ${p.davidNotes ? `<div class="mb-2"><span class="text-xs font-bold uppercase text-blue-600">David's Notes:</span> <span class="text-sm text-gray-800">${p.davidNotes}</span></div>` : ''}
+                                    ${p.jasonNotes ? `<div class="mb-2"><span class="text-xs font-bold uppercase text-indigo-600">Jason's Notes:</span> <span class="text-sm text-gray-800">${p.jasonNotes}</span></div>` : ''}
+                                    ${p.avpNotes ? `<div><span class="text-xs font-bold uppercase text-emerald-600">AVP Background:</span> <span class="text-sm text-gray-800">${p.avpNotes}</span></div>` : ''}
+                                </div>` : ''}
+
+                                ${p.publications ? `
+                                <div class="bg-white rounded-lg p-3 border border-gray-200">
+                                    <span class="text-xs font-bold uppercase text-purple-600 mb-1 block">Recent News / Pubs</span>
+                                    <p class="text-sm text-gray-800">${p.publications}</p>
+                                </div>` : ''}
+
+                                ${p.personalInterests ? `
+                                <div class="bg-white rounded-lg p-3 border border-gray-200">
+                                    <span class="text-xs font-bold uppercase text-rose-600 mb-1 block">Personal / Interests</span>
+                                    <p class="text-sm text-gray-800">${p.personalInterests}</p>
+                                </div>` : ''}
+
+                                <!-- Personal Free Text Notes -->
+                                <div class="mt-4">
+                                    <label class="text-xs font-bold uppercase text-gray-500 mb-1 block">My Live Notes</label>
+                                    <textarea 
+                                        class="w-full text-sm p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" 
+                                        rows="2" 
+                                        placeholder="Jot down things to remember from your conversation..."
+                                        oninput="saveNote('${p.id}', this.value)"
+                                    >${localNote}</textarea>
+                                </div>
                             </div>
                         </div>
-                        ${notesHtml}
                     </div>
                 `;
             }).join('');
@@ -212,26 +245,10 @@
             lucide.createIcons();
         }
 
-        // Event Listeners
         document.getElementById('searchInput').addEventListener('input', filterData);
-        
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Update styling
-                document.querySelectorAll('.filter-btn').forEach(b => {
-                    b.classList.remove('bg-blue-600', 'text-white', 'active');
-                    b.classList.add('bg-white', 'text-gray-700');
-                });
-                e.target.classList.remove('bg-white', 'text-gray-700');
-                e.target.classList.add('bg-blue-600', 'text-white', 'active');
-                
-                // Filter
-                currentFilter = e.target.dataset.filter;
-                filterData();
-            });
-        });
+        document.getElementById('priorityFilter').addEventListener('change', filterData);
+        document.getElementById('intelFilter').addEventListener('change', filterData);
 
-        // Init
         loadData();
     </script>
 </body>
