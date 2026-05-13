@@ -117,7 +117,11 @@
     "status": "",
     "emrAmbulatory": "Oracle Cerner",
     "emrInpatient": "Oracle Cerner",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Shared perspectives on healthcare legislation and medical group leadership with the California Medical Association (Aug 2025).",
+    "personalInterests": "Clinical informatics, EHR optimization, medical law.",
+    "leadIn": "With your background in clinical informatics and EHR optimization, what do you see as the next big hurdle for physician leadership at Adventist Health?",
+    "imageUrl": ""
   },
   {
     "id": "owp8skamb",
@@ -177,7 +181,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "publications": "Joined the Sanger Leadership Center Advisory Board at the University of Michigan Ross School of Business (July 2024).",
+    "personalInterests": "Physician diversity, maternal health, played in the University of Michigan Marching Band.",
+    "leadIn": "It's great to meet a fellow advocate for physician diversity. I read you played in the Michigan Marching Band—do you still play?",
+    "imageUrl": ""
   },
   {
     "id": "o0epjrv8e",
@@ -207,7 +215,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "publications": "Named one of the 2026 chief medical officers to know by Becker's Hospital Review.",
+    "personalInterests": "Community involvement with Duval County Medical Society and KIPP Jacksonville Public Schools.",
+    "leadIn": "Congratulations on the Becker's recognition this year! How are things progressing with your community work at KIPP Jacksonville?",
+    "imageUrl": ""
   },
   {
     "id": "fnej40vtm",
@@ -312,7 +324,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 3
+    "openOpps": 3,
+    "publications": "Presented on the rationale for ERAS pathways at BSW ERAS Symposium.",
+    "personalInterests": "Quality improvement, Enhanced Recovery After Surgery (ERAS) pathways.",
+    "leadIn": "I know you've done incredible work spreading ERAS throughout Baylor Health System; what are you focusing on next for quality improvement?",
+    "imageUrl": ""
   },
   {
     "id": "d74k6e7gg",
@@ -477,7 +493,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 2
+    "openOpps": 2,
+    "publications": "Featured in an AMA article 'Geisinger CMO works to cut friction and lift care' (April 2026).",
+    "personalInterests": "Removing barriers for care teams, reducing friction, value-based care.",
+    "leadIn": "I loved the AMA piece on how you're working to cut friction and lift care at Geisinger. What's the biggest friction point you're tackling right now?",
+    "imageUrl": ""
   },
   {
     "id": "bz7yi1zb9",
@@ -492,7 +512,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Named a 'Chief Medical Officer to Know' by Becker's (Feb 2025) and participated in the Medical Society of NJ innovation panel (April 2025).",
+    "personalInterests": "Clinical innovation, AI-driven primary care platforms.",
+    "leadIn": "I saw you recently praised K Health's AI platform at Hackensack Meridian. What other AI innovations are you most excited about?",
+    "imageUrl": ""
   },
   {
     "id": "7731clkw3",
@@ -522,7 +546,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 3
+    "openOpps": 3,
+    "publications": "Recognized as one of Crain’s Detroit Business’ Notable Leaders in Health Care for 2024.",
+    "personalInterests": "Sustainability in healthcare, health equity, cancer research.",
+    "leadIn": "Congratulations on being named one of Crain's Notable Leaders in Health Care! I'd love to hear about Henry Ford Health's sustainability initiatives.",
+    "imageUrl": ""
   },
   {
     "id": "usnk3kdbw",
@@ -567,7 +595,11 @@
     "status": "Sent",
     "emrAmbulatory": "Oracle Cerner",
     "emrInpatient": "Oracle Cerner",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Featured on Becker's Healthcare Podcast discussing EPIC expansion, simplifying care, and leadership (Feb 2025).",
+    "personalInterests": "Healthcare innovation, quality improvement, clinical leadership training.",
+    "leadIn": "I heard your recent Becker's Healthcare Podcast on simplifying care and EPIC expansion—how has that transition been impacting your clinical teams?",
+    "imageUrl": ""
   },
   {
     "id": "v77u1hxt3",
@@ -642,7 +674,11 @@
     "status": "Sent",
     "emrAmbulatory": "Oracle Cerner",
     "emrInpatient": "Oracle Cerner",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Guest on Michigan State of the State (MISOTS2024) focusing on health outcomes (Jan 2024).",
+    "personalInterests": "Oncology, quality improvement, mindfulness in leadership.",
+    "leadIn": "I know you've focused heavily on quality in oncology. How are the recent initiatives at McLaren progressing?",
+    "imageUrl": ""
   },
   {
     "id": "fq5z49aaq",
@@ -672,7 +708,11 @@
     "status": "Sent",
     "emrAmbulatory": "Oracle Cerner",
     "emrInpatient": "Oracle Cerner",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Featured on Becker's Healthcare Podcast discussing expanding patient access and integrating physician practices (Dec 2025).",
+    "personalInterests": "Healthcare operations, system growth, emergency medicine.",
+    "leadIn": "I really appreciated your insights on the Becker's podcast regarding integrating physician practices—how is Memorial Hermann managing that growth?",
+    "imageUrl": ""
   },
   {
     "id": "xiceshi7o",
@@ -807,7 +847,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "publications": "Featured on Becker's Hospital Review podcast discussing Novant Health's Center for Public Policy Solutions (April 2024).",
+    "personalInterests": "Black maternal health, health equity, public policy.",
+    "leadIn": "Your advocacy for maternal health is truly inspiring. How is the Center for Public Policy Solutions at Novant shaping your approach to health equity?",
+    "imageUrl": ""
   },
   {
     "id": "u9ni4csv0",
@@ -867,7 +911,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "publications": "Featured in May 2024 discussing the partnership between Monmouth College and OSF HealthCare for a nursing program.",
+    "personalInterests": "Nursing education, Monmouth College alumnus (Class of '79).",
+    "leadIn": "I saw the great news about the OSF HealthCare nursing program partnership with Monmouth College. As an alum, that must be a rewarding initiative.",
+    "imageUrl": ""
   },
   {
     "id": "61x4figs0",
@@ -1092,7 +1140,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Named a 2026 Castle Connolly Top Doctor (20 consecutive years).",
+    "personalInterests": "Endoscopic/minimally invasive treatment of brain tumors, neuro-stem cell-based therapies.",
+    "leadIn": "Congratulations on 20 consecutive years as a Castle Connolly Top Doctor! How are your neuro-stem cell therapy research efforts progressing?",
+    "imageUrl": ""
   },
   {
     "id": "gro3z7bcv",
@@ -1137,7 +1189,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 1
+    "openOpps": 1,
+    "publications": "Interviewed in HealthLeaders Media as the new CCO at UF Health (April 2025).",
+    "personalInterests": "Access as a quality measure, clinical operations.",
+    "leadIn": "I completely agree with your recent quote that 'access is a quality measure.' How is UF Health operationalizing that vision?",
+    "imageUrl": ""
   },
   {
     "id": "tf8grscto",
@@ -1272,6 +1328,10 @@
     "status": "Meeting Set",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 2
+    "openOpps": 2,
+    "publications": "Quoted in HealthLeaders on YNHHS's Care Signature Initiative to reduce care delivery variation (July 2024).",
+    "personalInterests": "Care standardization, clinical operations, reducing variation.",
+    "leadIn": "I've been following the Care Signature Initiative at Yale New Haven. How has the team responded to the care standardization efforts?",
+    "imageUrl": ""
   }
 ]
