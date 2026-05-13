@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>THMA CPE Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f3f4f6; color: #111827; }
+        .card { transition: all 0.2s ease-in-out; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="pb-20">
+    <div id="app" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <!-- Header -->
+        <header class="mb-6 sticky top-0 bg-[#f3f4f6] pt-4 pb-4 z-10 border-b border-gray-200">
+            <h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                <i data-lucide="users" class="text-blue-600"></i>
+                THMA CPE Intel
+            </h1>
+            <div class="mt-4 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i data-lucide="search" class="h-5 w-5 text-gray-400"></i>
+                </div>
+                <input type="text" id="searchInput" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-lg shadow-sm" placeholder="Search names, titles, health systems...">
+            </div>
+            <div class="mt-3 flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="filterChips">
+                <button class="filter-btn active px-4 py-1.5 rounded-full bg-blue-600 text-white text-sm font-medium whitespace-nowrap shadow-sm" data-filter="all">All Attendees</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="notes">Has Notes</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="opps">Open Opps</button>
+            </div>
+            <div id="resultCount" class="text-sm text-gray-500 mt-2 font-medium"></div>
+        </header>
+
+        <!-- List -->
+        <main id="directoryList" class="space-y-4">
+            <!-- Loading state -->
+            <div class="text-center py-10">
+                <i data-lucide="loader-2" class="h-8 w-8 animate-spin text-blue-600 mx-auto"></i>
+                <p class="mt-2 text-gray-500">Loading intel...</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let attendees = [];
+        let filteredAttendees = [];
+        let currentFilter = 'all';
+
+        // Initialize icons
+        lucide.createIcons();
+
+        // Fetch data
+        async function loadData() {
+            try {
+                const response = await fetch('./data.json');
+                attendees = await response.json();
+                
+                // Sort alphabetically by health system then name
+                attendees.sort((a, b) => {
+                    const sysA = (a.healthSystem || '').toLowerCase();
+                    const sysB = (b.healthSystem || '').toLowerCase();
+                    if (sysA < sysB) return -1;
+                    if (sysA > sysB) return 1;
+                    return (a.name || '').localeCompare(b.name || '');
+                });
+
+                filteredAttendees = [...attendees];
+                renderList();
+            } catch (error) {
+                document.getElementById('directoryList').innerHTML = `<div class="text-center text-red-500 py-10">Error loading data.</div>`;
+                console.error("Failed to load data:", error);
+            }
+        }
+
+        function filterData() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            
+            filteredAttendees = attendees.filter(p => {
+                const searchStr = `${p.name} ${p.healthSystem} ${p.title}`.toLowerCase();
+                const matchesSearch = searchStr.includes(query);
+                
+                let matchesFilter = true;
+                if (currentFilter === 'notes') {
+                    matchesFilter = !!(p.davidNotes || p.jasonNotes || p.avpNotes);
+                } else if (currentFilter === 'opps') {
+                    matchesFilter = !!p.openOpps;
+                }
+
+                return matchesSearch && matchesFilter;
+            });
+
+            renderList();
+        }
+
+        function renderList() {
+            const container = document.getElementById('directoryList');
+            const countLabel = document.getElementById('resultCount');
+            
+            countLabel.textContent = `${filteredAttendees.length} result${filteredAttendees.length !== 1 ? 's' : ''}`;
+            
+            if (filteredAttendees.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 bg-white rounded-xl border border-gray-200">
+                        <i data-lucide="search-x" class="h-10 w-10 text-gray-400 mx-auto mb-3"></i>
+                        <p class="text-gray-500 font-medium">No attendees found</p>
+                    </div>
+                `;
+                lucide.createIcons();
+                return;
+            }
+
+            container.innerHTML = filteredAttendees.map(p => {
+                const hasNotes = p.davidNotes || p.jasonNotes || p.avpNotes;
+                
+                let notesHtml = '';
+                if (hasNotes) {
+                    notesHtml = `<div class="mt-4 pt-4 border-t border-gray-100 space-y-3">`;
+                    
+                    if (p.davidNotes) {
+                        notesHtml += `
+                            <div class="bg-blue-50 rounded-lg p-3">
+                                <span class="text-xs font-bold uppercase tracking-wider text-blue-800 mb-1 flex items-center gap-1"><i data-lucide="user" class="w-3 h-3"></i> David's Notes</span>
+                                <p class="text-sm text-blue-900 leading-relaxed">${p.davidNotes}</p>
+                            </div>
+                        `;
+                    }
+                    if (p.jasonNotes) {
+                        notesHtml += `
+                            <div class="bg-indigo-50 rounded-lg p-3">
+                                <span class="text-xs font-bold uppercase tracking-wider text-indigo-800 mb-1 flex items-center gap-1"><i data-lucide="user-check" class="w-3 h-3"></i> Jason's Notes</span>
+                                <p class="text-sm text-indigo-900 leading-relaxed">${p.jasonNotes}</p>
+                            </div>
+                        `;
+                    }
+                    if (p.avpNotes) {
+                        notesHtml += `
+                            <div class="bg-emerald-50 rounded-lg p-3">
+                                <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 mb-1 flex items-center gap-1"><i data-lucide="briefcase" class="w-3 h-3"></i> AVP / Background</span>
+                                <p class="text-sm text-emerald-900 leading-relaxed">${p.avpNotes}</p>
+                            </div>
+                        `;
+                    }
+                    notesHtml += `</div>`;
+                }
+
+                let badgesHtml = '';
+                if (p.openOpps) badgesHtml += `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800"><i data-lucide="trending-up" class="w-3 h-3 mr-1"></i> ${p.openOpps} Opps</span>`;
+                if (p.status) badgesHtml += `<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">${p.status}</span>`;
+
+                return `
+                    <div class="card bg-white rounded-2xl p-5 border border-gray-200 shadow-sm overflow-hidden">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <h2 class="text-lg font-bold text-gray-900 leading-tight">${p.name || 'Unknown'}</h2>
+                                <p class="text-sm font-medium text-blue-600 mt-0.5">${p.healthSystem || 'Unknown System'}</p>
+                                <p class="text-sm text-gray-500 mt-1 line-clamp-2">${p.title || 'No Title'}</p>
+                            </div>
+                            <div class="flex flex-col gap-1 items-end shrink-0">
+                                ${badgesHtml}
+                            </div>
+                        </div>
+                        ${notesHtml}
+                    </div>
+                `;
+            }).join('');
+            
+            lucide.createIcons();
+        }
+
+        // Event Listeners
+        document.getElementById('searchInput').addEventListener('input', filterData);
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Update styling
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white', 'active');
+                    b.classList.add('bg-white', 'text-gray-700');
+                });
+                e.target.classList.remove('bg-white', 'text-gray-700');
+                e.target.classList.add('bg-blue-600', 'text-white', 'active');
+                
+                // Filter
+                currentFilter = e.target.dataset.filter;
+                filterData();
+            });
+        });
+
+        // Init
+        loadData();
+    </script>
+</body>
+</html>
