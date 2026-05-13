@@ -24,10 +24,11 @@
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <i data-lucide="search" class="h-5 w-5 text-gray-400"></i>
                 </div>
-                <input type="text" id="searchInput" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-lg shadow-sm" placeholder="Search names, titles, health systems...">
+                <input type="text" id="searchInput" class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-lg shadow-sm" placeholder="Search accounts, names, titles...">
             </div>
             <div class="mt-3 flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="filterChips">
                 <button class="filter-btn active px-4 py-1.5 rounded-full bg-blue-600 text-white text-sm font-medium whitespace-nowrap shadow-sm" data-filter="all">All Attendees</button>
+                <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="priority">🔥 Top Priority</button>
                 <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="notes">Has Notes</button>
                 <button class="filter-btn px-4 py-1.5 rounded-full bg-white text-gray-700 border border-gray-300 text-sm font-medium whitespace-nowrap shadow-sm" data-filter="opps">Open Opps</button>
             </div>
@@ -55,7 +56,8 @@
         // Fetch data
         async function loadData() {
             try {
-                const response = await fetch('./data.json');
+                // Add cache-busting to ensure we get the latest data with deep research
+                const response = await fetch('./data.json?v=' + new Date().getTime());
                 attendees = await response.json();
                 
                 // Sort alphabetically by health system then name
@@ -87,6 +89,11 @@
                     matchesFilter = !!(p.davidNotes || p.jasonNotes || p.avpNotes);
                 } else if (currentFilter === 'opps') {
                     matchesFilter = !!p.openOpps;
+                } else if (currentFilter === 'priority') {
+                    // C-level titles or explicit existing notes count as top priority
+                    const isCLevel = p.title && (p.title.includes('Chief') || p.title.includes('CMO') || p.title.includes('CCO') || p.title.includes('CEO') || p.title.includes('CIO'));
+                    const hasNotes = !!(p.davidNotes || p.jasonNotes || p.avpNotes);
+                    matchesFilter = isCLevel || hasNotes;
                 }
 
                 return matchesSearch && matchesFilter;
@@ -114,11 +121,43 @@
 
             container.innerHTML = filteredAttendees.map(p => {
                 const hasNotes = p.davidNotes || p.jasonNotes || p.avpNotes;
+                const hasDeepResearch = p.publications || p.personalInterests || p.leadIn || p.imageUrl;
                 
+                let imageHtml = '';
+                if (p.imageUrl) {
+                    imageHtml = `<img src="${p.imageUrl}" alt="${p.name}" class="w-12 h-12 rounded-full object-cover shrink-0 border border-gray-200" onerror="this.style.display='none'">`;
+                } else {
+                    imageHtml = `<div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 font-bold border border-blue-200"><i data-lucide="user" class="w-6 h-6"></i></div>`;
+                }
+
                 let notesHtml = '';
-                if (hasNotes) {
+                if (hasNotes || hasDeepResearch) {
                     notesHtml = `<div class="mt-4 pt-4 border-t border-gray-100 space-y-3">`;
                     
+                    if (p.leadIn) {
+                        notesHtml += `
+                            <div class="bg-amber-50 rounded-lg p-3 border-l-4 border-amber-400">
+                                <span class="text-xs font-bold uppercase tracking-wider text-amber-800 mb-1 flex items-center gap-1"><i data-lucide="message-circle" class="w-3 h-3"></i> Lead-in / Icebreaker</span>
+                                <p class="text-sm text-amber-900 leading-relaxed font-medium">${p.leadIn}</p>
+                            </div>
+                        `;
+                    }
+                    if (p.publications) {
+                        notesHtml += `
+                            <div class="bg-purple-50 rounded-lg p-3">
+                                <span class="text-xs font-bold uppercase tracking-wider text-purple-800 mb-1 flex items-center gap-1"><i data-lucide="book-open" class="w-3 h-3"></i> Recent Pubs & News</span>
+                                <p class="text-sm text-purple-900 leading-relaxed">${p.publications}</p>
+                            </div>
+                        `;
+                    }
+                    if (p.personalInterests) {
+                        notesHtml += `
+                            <div class="bg-rose-50 rounded-lg p-3">
+                                <span class="text-xs font-bold uppercase tracking-wider text-rose-800 mb-1 flex items-center gap-1"><i data-lucide="heart" class="w-3 h-3"></i> Personal / Interests</span>
+                                <p class="text-sm text-rose-900 leading-relaxed">${p.personalInterests}</p>
+                            </div>
+                        `;
+                    }
                     if (p.davidNotes) {
                         notesHtml += `
                             <div class="bg-blue-50 rounded-lg p-3">
@@ -153,10 +192,13 @@
                 return `
                     <div class="card bg-white rounded-2xl p-5 border border-gray-200 shadow-sm overflow-hidden">
                         <div class="flex justify-between items-start gap-4">
-                            <div>
-                                <h2 class="text-lg font-bold text-gray-900 leading-tight">${p.name || 'Unknown'}</h2>
-                                <p class="text-sm font-medium text-blue-600 mt-0.5">${p.healthSystem || 'Unknown System'}</p>
-                                <p class="text-sm text-gray-500 mt-1 line-clamp-2">${p.title || 'No Title'}</p>
+                            <div class="flex gap-4">
+                                ${imageHtml}
+                                <div>
+                                    <h2 class="text-lg font-bold text-gray-900 leading-tight">${p.name || 'Unknown'}</h2>
+                                    <p class="text-sm font-medium text-blue-600 mt-0.5">${p.healthSystem || 'Unknown System'}</p>
+                                    <p class="text-sm text-gray-500 mt-1 line-clamp-2">${p.title || 'No Title'}</p>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-1 items-end shrink-0">
                                 ${badgesHtml}
