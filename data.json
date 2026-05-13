@@ -17,7 +17,10 @@
     "personalBackground": "Extensive experience in medical administration at Henry Ford Health.",
     "conversationalLead": "I saw your leadership at HF Providence Hospital mentioned in our recent internal notes—how is the regional coordination with the main system evolving?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw your leadership at HF Providence Hospital mentioned in our recent internal notes—how is the regional coordination with the main system evolving?",
+    "publications": "Regional CMO at Henry Ford Providence; focused on hospital operations and physician leadership in the Detroit area.",
+    "personalInterests": "Extensive experience in medical administration at Henry Ford Health."
   },
   {
     "id": "xpqxiaf36",
@@ -37,7 +40,10 @@
     "personalBackground": "Associate CMO at Intermountain Health; expertise in thrombosis and cardiovascular care.",
     "conversationalLead": "I was interested in your recent work on VTE protocols at Intermountain. How do you see those clinical pathways scaling across the system?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I was interested in your recent work on VTE protocols at Intermountain. How do you see those clinical pathways scaling across the system?",
+    "publications": "Presented on VTE (venous thromboembolism) and extended anticoagulation at Intermountain Medical Center.",
+    "personalInterests": "Associate CMO at Intermountain Health; expertise in thrombosis and cardiovascular care."
   },
   {
     "id": "oe601nvrb",
@@ -57,7 +63,10 @@
     "personalBackground": "Cardiology leadership at Presbyterian.",
     "conversationalLead": "As Medical Director of Cardiology, what are the biggest challenges you're seeing in virtual cardiology or patient follow-up right now?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "As Medical Director of Cardiology, what are the biggest challenges you're seeing in virtual cardiology or patient follow-up right now?",
+    "publications": "Medical Director of Clinical Cardiology at Presbyterian Healthcare Services.",
+    "personalInterests": "Cardiology leadership at Presbyterian."
   },
   {
     "id": "8zysg5lea",
@@ -77,7 +86,10 @@
     "personalBackground": "Virtual Health Chief Quality and Medical Officer at Texas Health Resources.",
     "conversationalLead": "I caught your segment on CBS News Texas about breast cancer awareness—such an impactful story. I'd love to hear how THR is integrating that level of patient care into your virtual health platforms.",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I caught your segment on CBS News Texas about breast cancer awareness—such an impactful story. I'd love to hear how THR is integrating that level of patient care into your virtual health platforms.",
+    "publications": "Recently featured in CBS News Texas segment on breast cancer awareness and survivor stories (Dec 2025).",
+    "personalInterests": "Virtual Health Chief Quality and Medical Officer at Texas Health Resources."
   },
   {
     "id": "jkjqa06sp",
@@ -97,7 +109,10 @@
     "personalBackground": "Background in Women's Services and OB/GYN; previously CMO at Cone Health before joining AdventHealth.",
     "conversationalLead": "I’ve followed your advocacy for maternal health during the pandemic. At AdventHealth, are you finding new ways to scale that outreach through digital health?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I’ve followed your advocacy for maternal health during the pandemic. At AdventHealth, are you finding new ways to scale that outreach through digital health?",
+    "publications": "Frequent commentator on COVID-19 and maternal health; featured in national townhalls on vaccine safety for expecting mothers.",
+    "personalInterests": "Background in Women's Services and OB/GYN; previously CMO at Cone Health before joining AdventHealth."
   },
   {
     "id": "82c1wfymx",
@@ -117,7 +132,10 @@
     "personalBackground": "System Chief Medical Officer at Adventist Health; has a background in private practice and medical administration at White Memorial.",
     "conversationalLead": "I heard your podcast episode about transitioning from private practice to System CMO—it was a fascinating look at the shift in scale. How has that influenced your approach to system-wide quality?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I heard your podcast episode about transitioning from private practice to System CMO—it was a fascinating look at the shift in scale. How has that influenced your approach to system-wide quality?",
+    "publications": "Featured on 'The Story and Experience Podcast' discussing his transition from private practice to System CMO (Feb 2024).",
+    "personalInterests": "System Chief Medical Officer at Adventist Health; has a background in private practice and medical administration at White Memorial."
   },
   {
     "id": "myppuflix",
@@ -137,7 +155,10 @@
     "personalBackground": "Chief Medical Officer at Adventist Health Castle (Hawaii); practicing hospitalist.",
     "conversationalLead": "Aloha! I saw your recent insights on hospitalist trends at Adventist Health Castle. How are you balancing administrative duties with being a practicing hospitalist in Hawaii?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "Aloha! I saw your recent insights on hospitalist trends at Adventist Health Castle. How are you balancing administrative duties with being a practicing hospitalist in Hawaii?",
+    "publications": "Public health commentator on COVID-19 trends and hospitalist care in Hawaii.",
+    "personalInterests": "Chief Medical Officer at Adventist Health Castle (Hawaii); practicing hospitalist."
   },
   {
     "id": "dcifqcupl",
@@ -181,7 +202,10 @@
     "personalBackground": "Senior leadership at Advocate Health.",
     "conversationalLead": "As CMO for the Central Area at Advocate, I’d love to hear your thoughts on how you’re managing the latest EMR transitions across such a large footprint.",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "As CMO for the Central Area at Advocate, I’d love to hear your thoughts on how you’re managing the latest EMR transitions across such a large footprint.",
+    "publications": "VP/Chief Medical Officer at Advocate Health (Central Area); focus on medical ethics and patient advocacy.",
+    "personalInterests": "Senior leadership at Advocate Health."
   },
   {
     "id": "anp5si2nu",
@@ -201,7 +225,10 @@
     "personalBackground": "Director of Ambulatory Care at Advocate Christ Medical Center; internal medicine specialist.",
     "conversationalLead": "I saw your UIC promotion—congratulations. How has your work in ambulatory care at Advocate Christ influenced your teaching at the College of Medicine?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw your UIC promotion—congratulations. How has your work in ambulatory care at Advocate Christ influenced your teaching at the College of Medicine?",
+    "publications": "Clinical Associate Professor at UIC College of Medicine; featured in media panels on COVID-19 vaccine facts and LGBTQI+ care.",
+    "personalInterests": "Director of Ambulatory Care at Advocate Christ Medical Center; internal medicine specialist."
   },
   {
     "id": "ubaf7cw84",
@@ -221,7 +248,10 @@
     "personalBackground": "Vice Chair of Pediatrics at Advocate Children's Hospital; longtime pediatrician.",
     "conversationalLead": "I caught your segments on ABC7 about school safety—parents must find that guidance incredibly reassuring. How is Advocate Children's approaching the next phase of pediatric care growth?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I caught your segments on ABC7 about school safety—parents must find that guidance incredibly reassuring. How is Advocate Children's approaching the next phase of pediatric care growth?",
+    "publications": "Frequent media expert on pediatric health and school reopening safety (ABC7 Chicago).",
+    "personalInterests": "Vice Chair of Pediatrics at Advocate Children's Hospital; longtime pediatrician."
   },
   {
     "id": "f0jqq6zho",
@@ -265,7 +295,10 @@
     "personalBackground": "Chief Physician Executive at Ballad Health; Emergency Medicine background; ACHE Physician Leader award winner.",
     "conversationalLead": "I saw you were honored by Milligan for your pandemic leadership—well deserved. How has that experience changed Ballad’s strategy for managing throughput and surge capacity?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "I saw you were honored by Milligan for your pandemic leadership—well deserved. How has that experience changed Ballad’s strategy for managing throughput and surge capacity?",
+    "publications": "Distinguished Alumni Award recipient (Milligan University, 2021) for pandemic leadership.",
+    "personalInterests": "Chief Physician Executive at Ballad Health; Emergency Medicine background; ACHE Physician Leader award winner."
   },
   {
     "id": "2jnljfm54",
@@ -309,7 +342,10 @@
     "personalBackground": "Senior clinical and research leadership at Baptist Health.",
     "conversationalLead": "As System Research Executive, what clinical trials or innovations are you most excited about bringing to the Baptist Jacksonville network this year?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "As System Research Executive, what clinical trials or innovations are you most excited about bringing to the Baptist Jacksonville network this year?",
+    "publications": "Vice President of Medical Affairs and System Research Executive at Baptist Health Jacksonville.",
+    "personalInterests": "Senior clinical and research leadership at Baptist Health."
   },
   {
     "id": "24gp9be96",
@@ -329,7 +365,10 @@
     "personalBackground": "Hematologist/Oncologist; U.S. veteran; previously at Geisinger; expert in comprehensive cancer care models.",
     "conversationalLead": "I saw you’ve been leading the transition to a comprehensive cancer care model at Baptist—how has your background at Geisinger influenced that approach in Jacksonville?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw you’ve been leading the transition to a comprehensive cancer care model at Baptist—how has your background at Geisinger influenced that approach in Jacksonville?",
+    "publications": "VP and Medical Director of Operations, Baptist Physician Enterprise (2023); featured in 'Jacksonville Medical Professionals' publication (2020).",
+    "personalInterests": "Hematologist/Oncologist; U.S. veteran; previously at Geisinger; expert in comprehensive cancer care models."
   },
   {
     "id": "6srb8e940",
@@ -349,7 +388,10 @@
     "personalBackground": "Anesthesiologist (FASA); member of Duval County Medical Society; clinical leader in the Jacksonville area.",
     "conversationalLead": "Congratulations on your recent appointment as VP of Medical Affairs for Nassau and Beaches. How are you approaching clinical standardization across those different sites?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "Congratulations on your recent appointment as VP of Medical Affairs for Nassau and Beaches. How are you approaching clinical standardization across those different sites?",
+    "publications": "Appointed VP of Medical Affairs for Baptist Nassau and Baptist Beaches (Aug 2024).",
+    "personalInterests": "Anesthesiologist (FASA); member of Duval County Medical Society; clinical leader in the Jacksonville area."
   },
   {
     "id": "uuds98c3x",
@@ -369,7 +411,10 @@
     "personalBackground": "Jacksonville native; 20+ years as pediatric hospitalist; former Division Chief at Nemours.",
     "conversationalLead": "As a Jacksonville native and longtime leader at Wolfson, you’ve seen the system evolve—how is the new VP of Medical Affairs role allowing you to shape the future of pediatric hospital medicine there?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "As a Jacksonville native and longtime leader at Wolfson, you’ve seen the system evolve—how is the new VP of Medical Affairs role allowing you to shape the future of pediatric hospital medicine there?",
+    "publications": "Promoted to VP of Medical Affairs at Wolfson Children’s (Nov 2023); featured in Romper on pediatric allergies.",
+    "personalInterests": "Jacksonville native; 20+ years as pediatric hospitalist; former Division Chief at Nemours."
   },
   {
     "id": "rlzcrodzm",
@@ -389,7 +434,10 @@
     "personalBackground": "EVP and Chief Clinical Officer at Baptist Health South Florida; founding CEO of Baptist Health Medical Group.",
     "conversationalLead": "I read your recent work on the Miami Heart Study in Circulation—fascinating findings. How are you integrating those kinds of large-scale research insights into Baptist South Florida's clinical operations?",
     "profilePic": "",
-    "priorityLevel": "Low"
+    "priorityLevel": "Low",
+    "leadIn": "I read your recent work on the Miami Heart Study in Circulation—fascinating findings. How are you integrating those kinds of large-scale research insights into Baptist South Florida's clinical operations?",
+    "publications": "Co-author on Miami Heart Study in Circulation: Cardiovascular Imaging (2023); speaker at Baptist Research Symposium (2025).",
+    "personalInterests": "EVP and Chief Clinical Officer at Baptist Health South Florida; founding CEO of Baptist Health Medical Group."
   },
   {
     "id": "wvevtl299",
@@ -409,7 +457,10 @@
     "recentPublications": "CMO and VP of Value-Based Care at BSW Health; featured in AJMC on value-based care implementation (2023).",
     "personalBackground": "Urologist; MD/MBA from Northwestern; former CMO at UnitedHealthcare; expert in population health and ACO models.",
     "conversationalLead": "I read your AJMC piece on value-based care—it’s a critical roadmap for systems today. At BSW, how are you integrating that value-based lens into your clinical AI evaluation process?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "I read your AJMC piece on value-based care—it’s a critical roadmap for systems today. At BSW, how are you integrating that value-based lens into your clinical AI evaluation process?",
+    "publications": "CMO and VP of Value-Based Care at BSW Health; featured in AJMC on value-based care implementation (2023).",
+    "personalInterests": "Urologist; MD/MBA from Northwestern; former CMO at UnitedHealthcare; expert in population health and ACO models."
   },
   {
     "id": "xnwn13ry2",
@@ -453,7 +504,10 @@
     "personalBackground": "Physician leader focused on health equity and community-based health initiatives; MD/MBA background.",
     "conversationalLead": "Congratulations on the move to CMO of the Medical Group! I saw your recent community health work in Wilmington—how is that grassroots focus scaling to the system-wide Medical Group level?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "Congratulations on the move to CMO of the Medical Group! I saw your recent community health work in Wilmington—how is that grassroots focus scaling to the system-wide Medical Group level?",
+    "publications": "Promoted to CMO of the Medical Group at ChristianaCare (Nov 2025); former CMO of Wilmington Hospital.",
+    "personalInterests": "Physician leader focused on health equity and community-based health initiatives; MD/MBA background."
   },
   {
     "id": "oqsebb7m4",
@@ -489,7 +543,10 @@
     "personalBackground": "Family physician; 23 years at ChristianaCare; yoga enthusiast; advocate for women in healthcare leadership.",
     "conversationalLead": "Your legacy at ChristianaCare has been truly transformational—congratulations on your upcoming retirement. What do you see as the most critical 'unfinished business' for healthcare leadership in the next few years?",
     "profilePic": "",
-    "priorityLevel": "Low"
+    "priorityLevel": "Low",
+    "leadIn": "Your legacy at ChristianaCare has been truly transformational—congratulations on your upcoming retirement. What do you see as the most critical 'unfinished business' for healthcare leadership in the next few years?",
+    "publications": "Longtime President and CEO of ChristianaCare; announced retirement for Sept 2026; named '50 Most Influential Clinical Executive' by Modern Healthcare (2022).",
+    "personalInterests": "Family physician; 23 years at ChristianaCare; yoga enthusiast; advocate for women in healthcare leadership."
   },
   {
     "id": "i16330gyl",
@@ -509,7 +566,10 @@
     "personalBackground": "Chief Medical Officer at Corewell Health; Emergency Medicine background; former leader at Bon Secours Mercy Health Richmond.",
     "conversationalLead": "I was interested in your recent presentation on the CNO-CMO dyad—that collaborative model is so critical. How are you applying that dyad structure at Corewell to drive clinical transformation?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "I was interested in your recent presentation on the CNO-CMO dyad—that collaborative model is so critical. How are you applying that dyad structure at Corewell to drive clinical transformation?",
+    "publications": "Presented on CNO-CMO dyads at Corewell Health East Symposium (2025); featured on Becker’s Healthcare Podcast (2024).",
+    "personalInterests": "Chief Medical Officer at Corewell Health; Emergency Medicine background; former leader at Bon Secours Mercy Health Richmond."
   },
   {
     "id": "xedegqfkc",
@@ -529,7 +589,10 @@
     "personalBackground": "Endowed Chair at Frederik Meijer Heart and Vascular Institute; VP Cardiovascular Health at Corewell Health; world-renowned vascular surgeon.",
     "conversationalLead": "I’ve been following your recent publications in NEJM and JACC on carotid revascularization—incredible work. How is the Frederik Meijer Institute currently leveraging that level of research to improve cardiovascular outcomes across Corewell?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "I’ve been following your recent publications in NEJM and JACC on carotid revascularization—incredible work. How is the Frederik Meijer Institute currently leveraging that level of research to improve cardiovascular outcomes across Corewell?",
+    "publications": "Lead author on carotid revascularization and PAD studies in NEJM (2026) and J Am Coll Cardiol (2025).",
+    "personalInterests": "Endowed Chair at Frederik Meijer Heart and Vascular Institute; VP Cardiovascular Health at Corewell Health; world-renowned vascular surgeon."
   },
   {
     "id": "eezd0prvg",
@@ -549,7 +612,10 @@
     "personalBackground": "Clinical leadership at Emory; speaker on scaling AI in physician workflows.",
     "conversationalLead": "I’m looking forward to your session on AI scaling—Emory has such a strong reputation for innovation. What has been the biggest hurdle in getting physician buy-in for these new AI tools?",
     "profilePic": "",
-    "priorityLevel": "Med"
+    "priorityLevel": "Med",
+    "leadIn": "I’m looking forward to your session on AI scaling—Emory has such a strong reputation for innovation. What has been the biggest hurdle in getting physician buy-in for these new AI tools?",
+    "publications": "President of the Physician Division at Emory Healthcare; leader in physician enterprise AI transformation.",
+    "personalInterests": "Clinical leadership at Emory; speaker on scaling AI in physician workflows."
   },
   {
     "id": "k0iu7oqzk",
@@ -585,7 +651,10 @@
     "personalBackground": "Leadership at Froedtert & Medical College of Wisconsin; background in quality improvement and medical education.",
     "conversationalLead": "As Senior Associate Dean for Quality, how are you balancing the dual goals of academic research and front-line clinical quality at Froedtert?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "As Senior Associate Dean for Quality, how are you balancing the dual goals of academic research and front-line clinical quality at Froedtert?",
+    "publications": "Senior Associate Dean for Quality; focus on clinical quality and academic medicine integration at MCW.",
+    "personalInterests": "Leadership at Froedtert & Medical College of Wisconsin; background in quality improvement and medical education."
   },
   {
     "id": "vl14qqtpa",
@@ -781,7 +850,10 @@
     "personalBackground": "SVP and CMO at Legacy Health; Internal Medicine specialist with 30 years experience; yoga fan.",
     "conversationalLead": "I saw you’re a big yoga fan—it’s such a great balance to the intensity of being a System CMO. How is Legacy currently leveraging that kind of focus on wellness to reduce clinician burnout?",
     "profilePic": "",
-    "priorityLevel": "Med"
+    "priorityLevel": "Med",
+    "leadIn": "I saw you’re a big yoga fan—it’s such a great balance to the intensity of being a System CMO. How is Legacy currently leveraging that kind of focus on wellness to reduce clinician burnout?",
+    "publications": "Associate Professor at OHSU; recognized as 'Exemplary Physician' in Legacy Health patient reviews.",
+    "personalInterests": "SVP and CMO at Legacy Health; Internal Medicine specialist with 30 years experience; yoga fan."
   },
   {
     "id": "hp9o1vusm",
@@ -801,7 +873,10 @@
     "personalBackground": "VP and Associate Chief Medical Officer at Legacy Health; FAMIA (Fellow of American Medical Informatics Association).",
     "conversationalLead": "I read about your 'Fire Drills to Flow State' presentation at Epic UGM—that’s exactly the kind of transformation we’re focused on. How has the FAMIA informatics background helped you bridge the gap between IT and clinical ops?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I read about your 'Fire Drills to Flow State' presentation at Epic UGM—that’s exactly the kind of transformation we’re focused on. How has the FAMIA informatics background helped you bridge the gap between IT and clinical ops?",
+    "publications": "Presented at Epic UGM 2024 on patient flow: 'From Fire Drills to Flow State'; Clinical Assistant Professor at OHSU.",
+    "personalInterests": "VP and Associate Chief Medical Officer at Legacy Health; FAMIA (Fellow of American Medical Informatics Association)."
   },
   {
     "id": "ottpjjhc2",
@@ -821,7 +896,10 @@
     "personalBackground": "President and CMO of LCMC Health; former Chief Anesthesiologist at Children's Hospital New Orleans; MD/MMM background.",
     "conversationalLead": "I saw your recent move to create the Office of Advanced Practice at LCMC—what was the biggest driver for that investment? It seems like a major step forward for provider support.",
     "profilePic": "",
-    "priorityLevel": "Med"
+    "priorityLevel": "Med",
+    "leadIn": "I saw your recent move to create the Office of Advanced Practice at LCMC—what was the biggest driver for that investment? It seems like a major step forward for provider support.",
+    "publications": "Featured in NOLA Newswire (May 2026) on creating the Office of Advanced Practice; 20 years post-Katrina reflection (Aug 2025).",
+    "personalInterests": "President and CMO of LCMC Health; former Chief Anesthesiologist at Children's Hospital New Orleans; MD/MMM background."
   },
   {
     "id": "vu9ck1yin",
@@ -841,7 +919,10 @@
     "personalBackground": "VP of Clinical M&A and Strategic Alliances at Mass General Brigham; focus on network development and growing clinical relationships.",
     "conversationalLead": "I read your interview in the Vanderbilt Business Review on healthcare M&A. At Mass General Brigham, how are you ensuring that clinical quality remains the core driver during such rapid network growth?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I read your interview in the Vanderbilt Business Review on healthcare M&A. At Mass General Brigham, how are you ensuring that clinical quality remains the core driver during such rapid network growth?",
+    "publications": "Featured in Vanderbilt Business Review (Feb 2026) on M&A trends in healthcare.",
+    "personalInterests": "VP of Clinical M&A and Strategic Alliances at Mass General Brigham; focus on network development and growing clinical relationships."
   },
   {
     "id": "4u7qqr043",
@@ -885,7 +966,10 @@
     "personalBackground": "Chief Physician Executive at MUSC; authority on concussions and sports medicine; former team physician for USA Lacrosse.",
     "conversationalLead": "I saw you were named CMO for World Lacrosse—congratulations. How do you find the parallels between managing high-performance athletes and leading the physician enterprise at MUSC?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "I saw you were named CMO for World Lacrosse—congratulations. How do you find the parallels between managing high-performance athletes and leading the physician enterprise at MUSC?",
+    "publications": "Named CMO of World Lacrosse (2023); named to Becker’s '180 CMOs to Know' (2025).",
+    "personalInterests": "Chief Physician Executive at MUSC; authority on concussions and sports medicine; former team physician for USA Lacrosse."
   },
   {
     "id": "psoh9ux3f",
@@ -929,7 +1013,10 @@
     "personalBackground": "Regional CMO at Memorial Hermann Woodlands & Northeast; Cardiologist with 30 years experience; former Physician Lead for MHMG Cardiology.",
     "conversationalLead": "As a cardiologist now serving as a Regional CMO, how is that clinical lens helping you prioritize service line growth at The Woodlands and Northeast campuses?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "As a cardiologist now serving as a Regional CMO, how is that clinical lens helping you prioritize service line growth at The Woodlands and Northeast campuses?",
+    "publications": "Author of research on aortic insufficiency in ResearchGate (10 works, 483 citations).",
+    "personalInterests": "Regional CMO at Memorial Hermann Woodlands & Northeast; Cardiologist with 30 years experience; former Physician Lead for MHMG Cardiology."
   },
   {
     "id": "6tv79tpna",
@@ -949,7 +1036,10 @@
     "personalBackground": "Associate VP of Medical Operations at Memorial Hermann; Hospitalist; graduate of USC School of Medicine.",
     "conversationalLead": "With your background in Hospital Medicine, what are the biggest operational bottlenecks you're focused on solving right now for the Memorial Hermann Medical Group?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "With your background in Hospital Medicine, what are the biggest operational bottlenecks you're focused on solving right now for the Memorial Hermann Medical Group?",
+    "publications": "Board-certified internist featured in Issuewire (2020) for adult care excellence.",
+    "personalInterests": "Associate VP of Medical Operations at Memorial Hermann; Hospitalist; graduate of USC School of Medicine."
   },
   {
     "id": "27rvrsjw8",
@@ -969,7 +1059,10 @@
     "personalBackground": "SVP for Medical Affairs at Montefiore Einstein; General Internal Medicine specialist.",
     "conversationalLead": "I’ve been following your research on antiviral therapy outcomes—it’s such an important field. At Montefiore, how are you applying those research-driven insights to improve system-wide patient safety?",
     "profilePic": "",
-    "priorityLevel": "Med"
+    "priorityLevel": "Med",
+    "leadIn": "I’ve been following your research on antiviral therapy outcomes—it’s such an important field. At Montefiore, how are you applying those research-driven insights to improve system-wide patient safety?",
+    "publications": "Cited for 24 publications on ResearchGate; focus on Hepatitis C and antiviral therapy; Associate Professor at Einstein.",
+    "personalInterests": "SVP for Medical Affairs at Montefiore Einstein; General Internal Medicine specialist."
   },
   {
     "id": "m1tzp2a25",
@@ -989,7 +1082,10 @@
     "personalBackground": "Chief of Practice Operations for MUSC Community Physicians; MD/MBA from Alabama in Huntsville; background in diagnostic radiology.",
     "conversationalLead": "Congratulations on the appointment as Interim CPE for Community Physicians. How are you approaching the operational integration of the community practices with the main academic hub at MUSC?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "Congratulations on the appointment as Interim CPE for Community Physicians. How are you approaching the operational integration of the community practices with the main academic hub at MUSC?",
+    "publications": "Appointed Interim Chief Physician Executive for MUSC Community Physicians (Feb 2025).",
+    "personalInterests": "Chief of Practice Operations for MUSC Community Physicians; MD/MBA from Alabama in Huntsville; background in diagnostic radiology."
   },
   {
     "id": "tisw6il4q",
@@ -1009,7 +1105,10 @@
     "personalBackground": "CMO and Chief Compliance Officer at Nebraska Medicine; 40 years of experience; Omaha native.",
     "conversationalLead": "As both CMO and Chief Compliance Officer, you have a unique view of the system's guardrails. How are you thinking about the compliance landscape for clinical AI as it begins to scale at Nebraska Medicine?",
     "profilePic": "",
-    "priorityLevel": "Med"
+    "priorityLevel": "Med",
+    "leadIn": "As both CMO and Chief Compliance Officer, you have a unique view of the system's guardrails. How are you thinking about the compliance landscape for clinical AI as it begins to scale at Nebraska Medicine?",
+    "publications": "Associate Professor of Neurology at UNMC; regular contributor to regional neurology forums.",
+    "personalInterests": "CMO and Chief Compliance Officer at Nebraska Medicine; 40 years of experience; Omaha native."
   },
   {
     "id": "7oy84fr9h",
@@ -1029,7 +1128,10 @@
     "personalBackground": "Hospitalist with 26 years experience; interests in Graduate Medical Education and coaching; native Nebraskan.",
     "conversationalLead": "I saw your focus on perioperative care and coaching within the Hospital Medicine division. How are you leveraging those 'serious leadership' models to improve inpatient throughput at UNMC?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw your focus on perioperative care and coaching within the Hospital Medicine division. How are you leveraging those 'serious leadership' models to improve inpatient throughput at UNMC?",
+    "publications": "Division Chief for Hospital Medicine at UNMC (2020); regular speaker on perioperative care and mentoring.",
+    "personalInterests": "Hospitalist with 26 years experience; interests in Graduate Medical Education and coaching; native Nebraskan."
   },
   {
     "id": "fr504dc90",
@@ -1049,7 +1151,10 @@
     "personalBackground": "SVP and Director of Critical Care Services at Northwell; Professor at Zucker School of Medicine; expert in VV ECMO; vegetarian and dog lover.",
     "conversationalLead": "I saw your recognition in Crain’s New York—congratulations! With 132 publications and oversight of a 28-hospital critical care network, how are you approaching consistency and standardization in ICU workflows?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw your recognition in Crain’s New York—congratulations! With 132 publications and oversight of a 28-hospital critical care network, how are you approaching consistency and standardization in ICU workflows?",
+    "publications": "Named 'Notable Leader in Health Care' by Crain’s New York (2026); Lead author on 132 publications (11k citations).",
+    "personalInterests": "SVP and Director of Critical Care Services at Northwell; Professor at Zucker School of Medicine; expert in VV ECMO; vegetarian and dog lover."
   },
   {
     "id": "98xbgaenb",
@@ -1069,7 +1174,10 @@
     "personalBackground": "General Surgeon and Medical Director of Louisville's public health department; MD/MBA/MPH background.",
     "conversationalLead": "Your transition from State Public Health Commissioner to a general surgeon at Norton is such a unique path. How has that high-level public health perspective shaped your approach to robotic surgery and perioperative care?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "Your transition from State Public Health Commissioner to a general surgeon at Norton is such a unique path. How has that high-level public health perspective shaped your approach to robotic surgery and perioperative care?",
+    "publications": "Former KY State Public Health Commissioner; featured in news for joining Norton as General Surgeon (2022).",
+    "personalInterests": "General Surgeon and Medical Director of Louisville's public health department; MD/MBA/MPH background."
   },
   {
     "id": "6he3s3ay0",
@@ -1113,7 +1221,10 @@
     "personalBackground": "CEO of Northshore & Mississippi Gulf Coast for Ochsner Health; Hospitalist; Tulane alumna; champion of work-life balance.",
     "conversationalLead": "I loved your story on the Ochsner blog about balancing leadership and parenthood. As you lead the Northshore region, how are you creating that same culture of support for your clinical teams?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I loved your story on the Ochsner blog about balancing leadership and parenthood. As you lead the Northshore region, how are you creating that same culture of support for your clinical teams?",
+    "publications": "Featured in Ochsner careers blog (2025) on leadership and parenthood; leads Ocean's Healthcare collaboration.",
+    "personalInterests": "CEO of Northshore & Mississippi Gulf Coast for Ochsner Health; Hospitalist; Tulane alumna; champion of work-life balance."
   },
   {
     "id": "zacx4ewuq",
@@ -1133,7 +1244,10 @@
     "personalBackground": "LSU Health Sciences Center graduate; general surgeon with 31 years of clinical experience; based in Slidell, LA.",
     "conversationalLead": "With your 38-year tenure as a medical director at Ochsner, you’ve navigated more system changes than almost anyone. How are you currently thinking about the role of regional directors in driving clinical AI adoption?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "With your 38-year tenure as a medical director at Ochsner, you’ve navigated more system changes than almost anyone. How are you currently thinking about the role of regional directors in driving clinical AI adoption?",
+    "publications": "Regional Medical Director at Ochsner Health for 38 years; Board Certified in General Surgery.",
+    "personalInterests": "LSU Health Sciences Center graduate; general surgeon with 31 years of clinical experience; based in Slidell, LA."
   },
   {
     "id": "9pzlo5ayq",
@@ -1153,7 +1267,10 @@
     "personalBackground": "Pediatrician and Internist (FAAP, FACP); longstanding leadership at Ochsner Clinic.",
     "conversationalLead": "I saw your recent work on expanding Ochsner's clinical reach—how is the Ochsner Clinic currently prioritizing digital health initiatives to support your primary care and specialty networks?",
     "profilePic": "",
-    "priorityLevel": "Med"
+    "priorityLevel": "Med",
+    "leadIn": "I saw your recent work on expanding Ochsner's clinical reach—how is the Ochsner Clinic currently prioritizing digital health initiatives to support your primary care and specialty networks?",
+    "publications": "EVP and CMO at Ochsner Health; oversees physician organization and system-wide clinical operations.",
+    "personalInterests": "Pediatrician and Internist (FAAP, FACP); longstanding leadership at Ochsner Clinic."
   },
   {
     "id": "3p730yrau",
@@ -1197,7 +1314,10 @@
     "personalBackground": "Hospitalist background with 18 years of experience; focused on geriatric medicine and medical staff management.",
     "conversationalLead": "I saw your work in Medical Staff Affairs at Presbyterian—managing provider engagement is such a critical part of the current landscape. How are you leveraging new clinical tools to reduce the administrative load on your staff?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw your work in Medical Staff Affairs at Presbyterian—managing provider engagement is such a critical part of the current landscape. How are you leveraging new clinical tools to reduce the administrative load on your staff?",
+    "publications": "Vice President of Medical Staff Affairs at Presbyterian Healthcare Services; Internal Medicine specialist.",
+    "personalInterests": "Hospitalist background with 18 years of experience; focused on geriatric medicine and medical staff management."
   },
   {
     "id": "n8p451v93",
@@ -1217,7 +1337,10 @@
     "personalBackground": "EVP and Chief Medical and Quality Officer at RWJBarnabas Health; President/CEO of combined RWJBH and Rutgers Health Medical Group; focus on mortality reduction.",
     "conversationalLead": "Congratulations on the 2024 Excellence in Medicine Award! I read about your initiatives that reduced hospital mortality by 20%—what do you see as the next major quality frontier for RWJBarnabas?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "Congratulations on the 2024 Excellence in Medicine Award! I read about your initiatives that reduced hospital mortality by 20%—what do you see as the next major quality frontier for RWJBarnabas?",
+    "publications": "Named to Becker's '252 CMOs to Know' (2026); recipient of 2024 EJI Excellence in Medicine Award; featured on RWJBH blog (Jan 2025).",
+    "personalInterests": "EVP and Chief Medical and Quality Officer at RWJBarnabas Health; President/CEO of combined RWJBH and Rutgers Health Medical Group; focus on mortality reduction."
   },
   {
     "id": "r0fziddmm",
@@ -1237,7 +1360,10 @@
     "personalBackground": "Expert in health information system implementation and leveraging technology for patient outcomes; MD/MBA background.",
     "conversationalLead": "I heard your appearance on the Becker's Clinical Leadership Podcast—it was a great dive into transformational leadership. At Saint Francis, how are you currently leveraging your IT implementation background to streamline physician workflows?",
     "profilePic": "",
-    "priorityLevel": "High"
+    "priorityLevel": "High",
+    "leadIn": "I heard your appearance on the Becker's Clinical Leadership Podcast—it was a great dive into transformational leadership. At Saint Francis, how are you currently leveraging your IT implementation background to streamline physician workflows?",
+    "publications": "SVP and CMO at Saint Francis Health System; featured in Becker’s Clinical Leadership Podcast; Fellow of FACHE and CPHQ.",
+    "personalInterests": "Expert in health information system implementation and leveraging technology for patient outcomes; MD/MBA background."
   },
   {
     "id": "2cqsrk0wp",
@@ -1257,7 +1383,10 @@
     "personalBackground": "Pediatrician with MD/MBA; focused on eliminating health disparities and improving community health outcomes.",
     "conversationalLead": "I saw your leadership role in health equity at Sentara and your work with the Prostate Health Forum. How is Sentara using data-driven clinical AI to identify and address health disparities in the region?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "I saw your leadership role in health equity at Sentara and your work with the Prostate Health Forum. How is Sentara using data-driven clinical AI to identify and address health disparities in the region?",
+    "publications": "Medical Director of Health Equity at Sentara Health; Board member of Hampton Roads Prostate Health Forum.",
+    "personalInterests": "Pediatrician with MD/MBA; focused on eliminating health disparities and improving community health outcomes."
   },
   {
     "id": "cterd57u7",
@@ -1277,7 +1406,10 @@
     "personalBackground": "Emergency Medicine specialist with 29 years experience; University of Virginia medical grad.",
     "conversationalLead": "With your extensive background in Emergency Medicine, how is Sentara currently addressing the throughput and boarding challenges at Princess Anne and Norfolk General?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "With your extensive background in Emergency Medicine, how is Sentara currently addressing the throughput and boarding challenges at Princess Anne and Norfolk General?",
+    "publications": "VP and CMO at Sentara Princess Anne and Norfolk General; recognized for emergency medicine leadership.",
+    "personalInterests": "Emergency Medicine specialist with 29 years experience; University of Virginia medical grad."
   },
   {
     "id": "f78xyjewh",
@@ -1297,7 +1429,10 @@
     "personalBackground": "Chief Clinical Officer at SSM Health; former Ascension Alabama CCO; board-certified emergency physician; focus on CNO-CMO dyads.",
     "conversationalLead": "Congratulations on the '2026 CMO to Know' list! I read your HealthLeaders piece on value-based care—how are you currently restructuring the provider groups at SSM to meet those value-based objectives?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "Congratulations on the '2026 CMO to Know' list! I read your HealthLeaders piece on value-based care—how are you currently restructuring the provider groups at SSM to meet those value-based objectives?",
+    "publications": "Named to Becker's '2026 CMOs to Know'; featured in HealthLeaders on value-based care (Jan 2025).",
+    "personalInterests": "Chief Clinical Officer at SSM Health; former Ascension Alabama CCO; board-certified emergency physician; focus on CNO-CMO dyads."
   },
   {
     "id": "6sbl0trfv",
@@ -1465,7 +1600,10 @@
     "recentPublications": "Appointed Regional CMO for UnityPoint Health - Sioux City (June 2024).",
     "personalBackground": "Board-certified in both pediatric and adult emergency medicine; 20+ years of clinical experience.",
     "conversationalLead": "Congratulations on the new CMO role in Sioux City! With your background in both pediatric and adult emergency medicine, what’s your primary focus for improving throughput across those two distinct patient populations?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "Congratulations on the new CMO role in Sioux City! With your background in both pediatric and adult emergency medicine, what’s your primary focus for improving throughput across those two distinct patient populations?",
+    "publications": "Appointed Regional CMO for UnityPoint Health - Sioux City (June 2024).",
+    "personalInterests": "Board-certified in both pediatric and adult emergency medicine; 20+ years of clinical experience."
   },
   {
     "id": "gs269s2mr",
@@ -1485,7 +1623,10 @@
     "recentPublications": "Appointed System CMO at UnityPoint Health (July 2024); featured in HealthLeaders on simplicity in quality metrics (2025).",
     "personalBackground": "Internal Medicine background; over 15 years in clinical executive roles; focus on patient experience and care coordination.",
     "conversationalLead": "I saw your HealthLeaders interview on 'simplicity driving high quality'—it’s a powerful philosophy. At the system level for UnityPoint, how are you applying that simplicity to the way you rollout new clinical technologies?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "I saw your HealthLeaders interview on 'simplicity driving high quality'—it’s a powerful philosophy. At the system level for UnityPoint, how are you applying that simplicity to the way you rollout new clinical technologies?",
+    "publications": "Appointed System CMO at UnityPoint Health (July 2024); featured in HealthLeaders on simplicity in quality metrics (2025).",
+    "personalInterests": "Internal Medicine background; over 15 years in clinical executive roles; focus on patient experience and care coordination."
   },
   {
     "id": "xoyrtb65a",
@@ -1525,7 +1666,10 @@
     "recentPublications": "Inaugural Chief Physician Executive for UI Health Care (July 2025); President of American Head & Neck Society.",
     "personalBackground": "Otolaryngologist; MD/MPH from Princeton/Stanford; former CEO of University of Minnesota Physicians; expert in clinical integration.",
     "conversationalLead": "Congratulations on being named the inaugural CPE at UI Health Care! Your experience as a CEO at Minnesota must be invaluable for this new role. How are you approaching the unification of clinical operations across the UI system?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "Congratulations on being named the inaugural CPE at UI Health Care! Your experience as a CEO at Minnesota must be invaluable for this new role. How are you approaching the unification of clinical operations across the UI system?",
+    "publications": "Inaugural Chief Physician Executive for UI Health Care (July 2025); President of American Head & Neck Society.",
+    "personalInterests": "Otolaryngologist; MD/MPH from Princeton/Stanford; former CEO of University of Minnesota Physicians; expert in clinical integration."
   },
   {
     "id": "d67s1w1zm",
@@ -1545,7 +1689,10 @@
     "recentPublications": "Professor of Orthopedics at Maryland; preeminent orthopedic trauma surgeon; featured in news for research on clinical interventions.",
     "personalBackground": "SVP and CCO at UMMS; MD from Northwestern; former Chair of Orthopedics; focus on building research-driven clinical programs.",
     "conversationalLead": "As a preeminent trauma surgeon and CCO, you’ve led some of the most critical clinical lines. At UMMS, how are you aligning the academic research mission with the operational need for better patient flow and wait-time reduction?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "As a preeminent trauma surgeon and CCO, you’ve led some of the most critical clinical lines. At UMMS, how are you aligning the academic research mission with the operational need for better patient flow and wait-time reduction?",
+    "publications": "Professor of Orthopedics at Maryland; preeminent orthopedic trauma surgeon; featured in news for research on clinical interventions.",
+    "personalInterests": "SVP and CCO at UMMS; MD from Northwestern; former Chair of Orthopedics; focus on building research-driven clinical programs."
   },
   {
     "id": "wded6hjy2",
@@ -1565,7 +1712,10 @@
     "recentPublications": "Named Fellow of AMIA (2024); Associate Director of UR Health Lab; ACMIO at University of Rochester.",
     "personalBackground": "Hospitalist; MD/MBA from SUNY Buffalo; expert in health systems management and informatics.",
     "conversationalLead": "Congratulations on being named an AMIA Fellow! Your work at the UR Health Lab is very relevant to what we do. How is the lab currently bridging the gap between informatics and front-line physician experience?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "Congratulations on being named an AMIA Fellow! Your work at the UR Health Lab is very relevant to what we do. How is the lab currently bridging the gap between informatics and front-line physician experience?",
+    "publications": "Named Fellow of AMIA (2024); Associate Director of UR Health Lab; ACMIO at University of Rochester.",
+    "personalInterests": "Hospitalist; MD/MBA from SUNY Buffalo; expert in health systems management and informatics."
   },
   {
     "id": "hs62i9e93",
@@ -1601,7 +1751,10 @@
     "personalBackground": "Pulmonary and Critical Care specialist; expert in interstitial lung diseases; MD/MSPH/MS-MAS background.",
     "conversationalLead": "As both a clinical professor and System CMO, you have a unique view of the academic-clinical bridge. How is UT Southwestern integrating real-world clinical AI into the training environment for your residents and fellows?",
     "profilePic": "",
-    "priorityLevel": ""
+    "priorityLevel": "",
+    "leadIn": "As both a clinical professor and System CMO, you have a unique view of the academic-clinical bridge. How is UT Southwestern integrating real-world clinical AI into the training environment for your residents and fellows?",
+    "publications": "Associate VP and CMO at UT Southwestern University Hospital; Professor of Internal Medicine.",
+    "personalInterests": "Pulmonary and Critical Care specialist; expert in interstitial lung diseases; MD/MSPH/MS-MAS background."
   },
   {
     "id": "tdhsmctzm",
@@ -1653,7 +1806,10 @@
     "recentPublications": "SVP and CMO for Yale New Haven at Lawrence + Memorial; featured in PSQH on safety (2024).",
     "personalBackground": "Emergency Medicine specialist; MD/MHCM; former Air Force physician; Chair of Emergency Medicine at L+M.",
     "conversationalLead": "With your background in the Air Force and Emergency Medicine, you’ve clearly managed clinical ops in high-pressure environments. At L+M, how are you applying those HRO principles to the way you manage patient flow and safety?",
-    "profilePic": ""
+    "profilePic": "",
+    "leadIn": "With your background in the Air Force and Emergency Medicine, you’ve clearly managed clinical ops in high-pressure environments. At L+M, how are you applying those HRO principles to the way you manage patient flow and safety?",
+    "publications": "SVP and CMO for Yale New Haven at Lawrence + Memorial; featured in PSQH on safety (2024).",
+    "personalInterests": "Emergency Medicine specialist; MD/MHCM; former Air Force physician; Chair of Emergency Medicine at L+M."
   },
   {
     "id": "ogfwbq8vn",
