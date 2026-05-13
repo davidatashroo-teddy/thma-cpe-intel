@@ -734,7 +734,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Associate Professor at OHSU; recognized as 'Exemplary Physician' in Legacy Health patient reviews.",
+    "personalBackground": "SVP and CMO at Legacy Health; Internal Medicine specialist with 30 years experience; yoga fan.",
+    "conversationalLead": "I saw you\u2019re a big yoga fan\u2014it\u2019s such a great balance to the intensity of being a System CMO. How is Legacy currently leveraging that kind of focus on wellness to reduce clinician burnout?",
+    "profilePic": ""
   },
   {
     "id": "hp9o1vusm",
@@ -749,7 +753,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Presented at Epic UGM 2024 on patient flow: 'From Fire Drills to Flow State'; Clinical Assistant Professor at OHSU.",
+    "personalBackground": "VP and Associate Chief Medical Officer at Legacy Health; FAMIA (Fellow of American Medical Informatics Association).",
+    "conversationalLead": "I read about your 'Fire Drills to Flow State' presentation at Epic UGM\u2014that\u2019s exactly the kind of transformation we\u2019re focused on. How has the FAMIA informatics background helped you bridge the gap between IT and clinical ops?",
+    "profilePic": ""
   },
   {
     "id": "ottpjjhc2",
@@ -764,7 +772,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Featured in NOLA Newswire (May 2026) on creating the Office of Advanced Practice; 20 years post-Katrina reflection (Aug 2025).",
+    "personalBackground": "President and CMO of LCMC Health; former Chief Anesthesiologist at Children's Hospital New Orleans; MD/MMM background.",
+    "conversationalLead": "I saw your recent move to create the Office of Advanced Practice at LCMC\u2014what was the biggest driver for that investment? It seems like a major step forward for provider support.",
+    "profilePic": ""
   },
   {
     "id": "vu9ck1yin",
@@ -779,7 +791,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Featured in Vanderbilt Business Review (Feb 2026) on M&A trends in healthcare.",
+    "personalBackground": "VP of Clinical M&A and Strategic Alliances at Mass General Brigham; focus on network development and growing clinical relationships.",
+    "conversationalLead": "I read your interview in the Vanderbilt Business Review on healthcare M&A. At Mass General Brigham, how are you ensuring that clinical quality remains the core driver during such rapid network growth?",
+    "profilePic": ""
   },
   {
     "id": "4u7qqr043",
@@ -798,7 +814,11 @@
     "publications": "Guest on Michigan State of the State (MISOTS2024) focusing on health outcomes (Jan 2024).",
     "personalInterests": "Oncology, quality improvement, mindfulness in leadership.",
     "leadIn": "I know you've focused heavily on quality in oncology. How are the recent initiatives at McLaren progressing?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "Named 'CMO to Know' by Becker\u2019s (2024); featured on 'Flourishing in Medicine' podcast.",
+    "personalBackground": "EVP and Chief Clinical Officer at McLaren Health; President of Karmanos Cancer Hospital; appointed to MI Public Health Advisory Commission.",
+    "conversationalLead": "Congratulations on the 'CMO to Know' recognition! I heard your podcast on 'Flourishing in Medicine'\u2014at a system like McLaren with 14 hospitals, what\u2019s your primary strategy for keeping clinical teams thriving?",
+    "profilePic": ""
   },
   {
     "id": "fq5z49aaq",
@@ -813,7 +833,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 1
+    "openOpps": 1,
+    "recentPublications": "Named CMO of World Lacrosse (2023); named to Becker\u2019s '180 CMOs to Know' (2025).",
+    "personalBackground": "Chief Physician Executive at MUSC; authority on concussions and sports medicine; former team physician for USA Lacrosse.",
+    "conversationalLead": "I saw you were named CMO for World Lacrosse\u2014congratulations. How do you find the parallels between managing high-performance athletes and leading the physician enterprise at MUSC?",
+    "profilePic": ""
   },
   {
     "id": "psoh9ux3f",
@@ -832,7 +856,11 @@
     "publications": "Featured on Becker's Healthcare Podcast discussing expanding patient access and integrating physician practices (Dec 2025).",
     "personalInterests": "Healthcare operations, system growth, emergency medicine.",
     "leadIn": "I really appreciated your insights on the Becker's podcast regarding integrating physician practices\u2014how is Memorial Hermann managing that growth?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "Named Becker's 'CMO to Know' (2025); featured on Becker\u2019s Healthcare Podcast (Dec 2025).",
+    "personalBackground": "EVP and Chief Physician Executive at Memorial Hermann; former Chair of Emergency Medicine; focus on school-based clinics.",
+    "conversationalLead": "I caught your Becker\u2019s podcast episode about expanding patient access through school-based clinics\u2014that\u2019s such a powerful community model. How are you thinking about the next layer of integration for your physician groups?",
+    "profilePic": ""
   },
   {
     "id": "xiceshi7o",
@@ -847,7 +875,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Author of research on aortic insufficiency in ResearchGate (10 works, 483 citations).",
+    "personalBackground": "Regional CMO at Memorial Hermann Woodlands & Northeast; Cardiologist with 30 years experience; former Physician Lead for MHMG Cardiology.",
+    "conversationalLead": "As a cardiologist now serving as a Regional CMO, how is that clinical lens helping you prioritize service line growth at The Woodlands and Northeast campuses?",
+    "profilePic": ""
   },
   {
     "id": "6tv79tpna",
@@ -862,7 +894,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Board-certified internist featured in Issuewire (2020) for adult care excellence.",
+    "personalBackground": "Associate VP of Medical Operations at Memorial Hermann; Hospitalist; graduate of USC School of Medicine.",
+    "conversationalLead": "With your background in Hospital Medicine, what are the biggest operational bottlenecks you're focused on solving right now for the Memorial Hermann Medical Group?",
+    "profilePic": ""
   },
   {
     "id": "27rvrsjw8",
@@ -877,7 +913,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 1
+    "openOpps": 1,
+    "recentPublications": "Cited for 24 publications on ResearchGate; focus on Hepatitis C and antiviral therapy; Associate Professor at Einstein.",
+    "personalBackground": "SVP for Medical Affairs at Montefiore Einstein; General Internal Medicine specialist.",
+    "conversationalLead": "I\u2019ve been following your research on antiviral therapy outcomes\u2014it\u2019s such an important field. At Montefiore, how are you applying those research-driven insights to improve system-wide patient safety?",
+    "profilePic": ""
   },
   {
     "id": "m1tzp2a25",
@@ -892,7 +932,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Appointed Interim Chief Physician Executive for MUSC Community Physicians (Feb 2025).",
+    "personalBackground": "Chief of Practice Operations for MUSC Community Physicians; MD/MBA from Alabama in Huntsville; background in diagnostic radiology.",
+    "conversationalLead": "Congratulations on the appointment as Interim CPE for Community Physicians. How are you approaching the operational integration of the community practices with the main academic hub at MUSC?",
+    "profilePic": ""
   },
   {
     "id": "tisw6il4q",
@@ -907,7 +951,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Associate Professor of Neurology at UNMC; regular contributor to regional neurology forums.",
+    "personalBackground": "CMO and Chief Compliance Officer at Nebraska Medicine; 40 years of experience; Omaha native.",
+    "conversationalLead": "As both CMO and Chief Compliance Officer, you have a unique view of the system's guardrails. How are you thinking about the compliance landscape for clinical AI as it begins to scale at Nebraska Medicine?",
+    "profilePic": ""
   },
   {
     "id": "7oy84fr9h",
@@ -922,7 +970,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Division Chief for Hospital Medicine at UNMC (2020); regular speaker on perioperative care and mentoring.",
+    "personalBackground": "Hospitalist with 26 years experience; interests in Graduate Medical Education and coaching; native Nebraskan.",
+    "conversationalLead": "I saw your focus on perioperative care and coaching within the Hospital Medicine division. How are you leveraging those 'serious leadership' models to improve inpatient throughput at UNMC?",
+    "profilePic": ""
   },
   {
     "id": "fr504dc90",
@@ -937,7 +989,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Named 'Notable Leader in Health Care' by Crain\u2019s New York (2026); Lead author on 132 publications (11k citations).",
+    "personalBackground": "SVP and Director of Critical Care Services at Northwell; Professor at Zucker School of Medicine; expert in VV ECMO; vegetarian and dog lover.",
+    "conversationalLead": "I saw your recognition in Crain\u2019s New York\u2014congratulations! With 132 publications and oversight of a 28-hospital critical care network, how are you approaching consistency and standardization in ICU workflows?",
+    "profilePic": ""
   },
   {
     "id": "98xbgaenb",
@@ -952,7 +1008,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Former KY State Public Health Commissioner; featured in news for joining Norton as General Surgeon (2022).",
+    "personalBackground": "General Surgeon and Medical Director of Louisville's public health department; MD/MBA/MPH background.",
+    "conversationalLead": "Your transition from State Public Health Commissioner to a general surgeon at Norton is such a unique path. How has that high-level public health perspective shaped your approach to robotic surgery and perioperative care?",
+    "profilePic": ""
   },
   {
     "id": "6he3s3ay0",
@@ -971,7 +1031,11 @@
     "publications": "Featured on Becker's Hospital Review podcast discussing Novant Health's Center for Public Policy Solutions (April 2024).",
     "personalInterests": "Black maternal health, health equity, public policy.",
     "leadIn": "Your advocacy for maternal health is truly inspiring. How is the Center for Public Policy Solutions at Novant shaping your approach to health equity?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "Named Executive VP and CMO at Novant Health (2023); featured in Fierce Healthcare as a Black maternal health advocate.",
+    "personalBackground": "Practicing OB-GYN; leads health equity and guidance for Novant Health institutes; UNC Chapel Hill alumna.",
+    "conversationalLead": "I\u2019ve followed your advocacy for health equity and Black maternal health. At Novant, what have been the most successful ways you've integrated those equity goals into the daily workflows of the medical group?",
+    "profilePic": ""
   },
   {
     "id": "u9ni4csv0",
@@ -986,7 +1050,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Featured in Ochsner careers blog (2025) on leadership and parenthood; leads Ocean's Healthcare collaboration.",
+    "personalBackground": "CEO of Northshore & Mississippi Gulf Coast for Ochsner Health; Hospitalist; Tulane alumna; champion of work-life balance.",
+    "conversationalLead": "I loved your story on the Ochsner blog about balancing leadership and parenthood. As you lead the Northshore region, how are you creating that same culture of support for your clinical teams?",
+    "profilePic": ""
   },
   {
     "id": "zacx4ewuq",
