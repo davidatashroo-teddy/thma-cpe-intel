@@ -1069,7 +1069,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Regional Medical Director at Ochsner Health for 38 years; Board Certified in General Surgery.",
+    "personalBackground": "LSU Health Sciences Center graduate; general surgeon with 31 years of clinical experience; based in Slidell, LA.",
+    "conversationalLead": "With your 38-year tenure as a medical director at Ochsner, you\u2019ve navigated more system changes than almost anyone. How are you currently thinking about the role of regional directors in driving clinical AI adoption?",
+    "profilePic": ""
   },
   {
     "id": "9pzlo5ayq",
@@ -1084,7 +1088,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "EVP and CMO at Ochsner Health; oversees physician organization and system-wide clinical operations.",
+    "personalBackground": "Pediatrician and Internist (FAAP, FACP); longstanding leadership at Ochsner Clinic.",
+    "conversationalLead": "I saw your recent work on expanding Ochsner's clinical reach\u2014how is the Ochsner Clinic currently prioritizing digital health initiatives to support your primary care and specialty networks?",
+    "profilePic": ""
   },
   {
     "id": "3p730yrau",
@@ -1103,7 +1111,11 @@
     "publications": "Featured in May 2024 discussing the partnership between Monmouth College and OSF HealthCare for a nursing program.",
     "personalInterests": "Nursing education, Monmouth College alumnus (Class of '79).",
     "leadIn": "I saw the great news about the OSF HealthCare nursing program partnership with Monmouth College. As an alum, that must be a rewarding initiative.",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "Ministry Chief Medical Officer at OSF HealthCare; focus on clinical excellence and digital transformation.",
+    "personalBackground": "Senior clinical leadership at OSF; background in managing large-scale clinical teams across the ministry.",
+    "conversationalLead": "As Ministry CMO at OSF, you\u2019re overseeing such a diverse clinical footprint. How is OSF thinking about the 'digital first' patient experience in your clinical strategy for 2026?",
+    "profilePic": ""
   },
   {
     "id": "61x4figs0",
@@ -1118,7 +1130,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Vice President of Medical Staff Affairs at Presbyterian Healthcare Services; Internal Medicine specialist.",
+    "personalBackground": "Hospitalist background with 18 years of experience; focused on geriatric medicine and medical staff management.",
+    "conversationalLead": "I saw your work in Medical Staff Affairs at Presbyterian\u2014managing provider engagement is such a critical part of the current landscape. How are you leveraging new clinical tools to reduce the administrative load on your staff?",
+    "profilePic": ""
   },
   {
     "id": "n8p451v93",
@@ -1133,7 +1149,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Named to Becker's '252 CMOs to Know' (2026); recipient of 2024 EJI Excellence in Medicine Award; featured on RWJBH blog (Jan 2025).",
+    "personalBackground": "EVP and Chief Medical and Quality Officer at RWJBarnabas Health; President/CEO of combined RWJBH and Rutgers Health Medical Group; focus on mortality reduction.",
+    "conversationalLead": "Congratulations on the 2024 Excellence in Medicine Award! I read about your initiatives that reduced hospital mortality by 20%\u2014what do you see as the next major quality frontier for RWJBarnabas?",
+    "profilePic": ""
   },
   {
     "id": "r0fziddmm",
@@ -1148,7 +1168,11 @@
     "status": "Sent",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": 2
+    "openOpps": 2,
+    "recentPublications": "SVP and CMO at Saint Francis Health System; featured in Becker\u2019s Clinical Leadership Podcast; Fellow of FACHE and CPHQ.",
+    "personalBackground": "Expert in health information system implementation and leveraging technology for patient outcomes; MD/MBA background.",
+    "conversationalLead": "I heard your appearance on the Becker's Clinical Leadership Podcast\u2014it was a great dive into transformational leadership. At Saint Francis, how are you currently leveraging your IT implementation background to streamline physician workflows?",
+    "profilePic": ""
   },
   {
     "id": "2cqsrk0wp",
@@ -1163,7 +1187,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Medical Director of Health Equity at Sentara Health; Board member of Hampton Roads Prostate Health Forum.",
+    "personalBackground": "Pediatrician with MD/MBA; focused on eliminating health disparities and improving community health outcomes.",
+    "conversationalLead": "I saw your leadership role in health equity at Sentara and your work with the Prostate Health Forum. How is Sentara using data-driven clinical AI to identify and address health disparities in the region?",
+    "profilePic": ""
   },
   {
     "id": "cterd57u7",
@@ -1178,7 +1206,11 @@
     "status": "Sent",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "VP and CMO at Sentara Princess Anne and Norfolk General; recognized for emergency medicine leadership.",
+    "personalBackground": "Emergency Medicine specialist with 29 years experience; University of Virginia medical grad.",
+    "conversationalLead": "With your extensive background in Emergency Medicine, how is Sentara currently addressing the throughput and boarding challenges at Princess Anne and Norfolk General?",
+    "profilePic": ""
   },
   {
     "id": "f78xyjewh",
@@ -1193,7 +1225,11 @@
     "status": "",
     "emrAmbulatory": "Epic Systems Corporation",
     "emrInpatient": "Epic Systems Corporation",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Named to Becker's '2026 CMOs to Know'; featured in HealthLeaders on value-based care (Jan 2025).",
+    "personalBackground": "Chief Clinical Officer at SSM Health; former Ascension Alabama CCO; board-certified emergency physician; focus on CNO-CMO dyads.",
+    "conversationalLead": "Congratulations on the '2026 CMO to Know' list! I read your HealthLeaders piece on value-based care\u2014how are you currently restructuring the provider groups at SSM to meet those value-based objectives?",
+    "profilePic": ""
   },
   {
     "id": "6sbl0trfv",
@@ -1456,7 +1492,11 @@
     "status": "",
     "emrAmbulatory": "",
     "emrInpatient": "",
-    "openOpps": ""
+    "openOpps": "",
+    "recentPublications": "Associate VP and CMO at UT Southwestern University Hospital; Professor of Internal Medicine.",
+    "personalBackground": "Pulmonary and Critical Care specialist; expert in interstitial lung diseases; MD/MSPH/MS-MAS background.",
+    "conversationalLead": "As both a clinical professor and System CMO, you have a unique view of the academic-clinical bridge. How is UT Southwestern integrating real-world clinical AI into the training environment for your residents and fellows?",
+    "profilePic": ""
   },
   {
     "id": "tdhsmctzm",
@@ -1520,6 +1560,10 @@
     "publications": "Quoted in HealthLeaders on YNHHS's Care Signature Initiative to reduce care delivery variation (July 2024).",
     "personalInterests": "Care standardization, clinical operations, reducing variation.",
     "leadIn": "I've been following the Care Signature Initiative at Yale New Haven. How has the team responded to the care standardization efforts?",
-    "imageUrl": ""
+    "imageUrl": "",
+    "recentPublications": "EVP and CCO at Yale New Haven Health; featured in PSQH on safety and quality (2024); featured on 'The Gary Bisbee Show' podcast.",
+    "personalBackground": "Internist with MD/MPH from Yale; 30+ year tenure at Yale New Haven; focus on High Reliability Organizations (HRO).",
+    "conversationalLead": "I listened to your episode on The Gary Bisbee Show\u2014fascinating perspective on the role of the CCO. How is Yale New Haven\u2019s journey to becoming a High Reliability Organization evolving with the help of new digital assistants?",
+    "profilePic": ""
   }
 ]
